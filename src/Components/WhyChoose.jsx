@@ -1,4 +1,4 @@
-import WhyChooseImage from "../assets/file.svg";
+import WhyChooseImage from "../assets/Vector.svg";
 import handshake from "../assets/Handshake.svg";
 import space from "../assets/space.svg";
 import shield from "../assets/shield.svg";
