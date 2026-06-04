@@ -2,7 +2,7 @@ import About from "../Components/About"
 import Hero from "../Components/Hero"
 import Vision from "../Components/Vision"
 import WhyChoose from "../Components/WhyChoose"
-import Who from "../Components/who"
+import Who from "../Components/Who"
 
 const Home = () => {
   return (
