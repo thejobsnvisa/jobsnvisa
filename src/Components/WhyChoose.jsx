@@ -1,4 +1,4 @@
-import WhyChooseImage from "../assets/Vector.svg";
+import WhyChooseImage from "../assets/vector.svg";
 import handshake from "../assets/Handshake.svg";
 import space from "../assets/space.svg";
 import shield from "../assets/shield.svg";
@@ -39,14 +39,11 @@ const WhyChoose = () => {
       <div className="container mx-auto">
         <div className="relative">
           {/* Background Image */}
-        <div
-  className="w-full h-[550px]"
-  style={{
-    backgroundImage: `url(${WhyChooseImage})`,
-    backgroundRepeat: "repeat-x",
-    backgroundSize: "auto 100%",
-  }}
-></div>
+          <img
+            className="w-full h-full object-cover min-h-[550px] md:min-h-[auto]"
+            src={WhyChooseImage}
+            alt="Why Choose Us"
+          />
 
           <div className="absolute inset-0 flex flex-col items-center">
             {/* Heading */}
