@@ -2,7 +2,7 @@ import WhyChooseImage from "../assets/file.svg";
 import handshake from "../assets/Handshake.svg";
 import space from "../assets/space.svg";
 import shield from "../assets/shield.svg";
-import medal from "../assets/medal.svg";
+import medal from "../assets/Medal.svg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
