@@ -12,137 +12,86 @@ import "swiper/css/pagination";
 
 const WhyChoose = () => {
   const items = [
-    {
-      title: "Trusted Partnerships",
-      desc: "Strong relationships with leading sponsors who trust us to find their ideal candidates.",
-      image: handshake,
-    },
-    {
-      title: "Fast Track Process",
-      desc: "Streamlined application and placement process that gets you started quickly.",
-      image: space,
-    },
-    {
-      title: "Secure and Reliable",
-      desc: "Licensed migration agents and registered employment services for your peace of mind.",
-      image: shield,
-    },
-    {
-      title: "Industry Expertise",
-      desc: "Deep understanding of Australian job market trends and requirements across major industries.",
-      image: medal,
-    },
+    { title: "Trusted Partnerships", desc: "Strong relationships with leading sponsors who trust us to find their ideal candidates.", image: handshake },
+    { title: "Fast Track Process", desc: "Streamlined application and placement process that gets you started quickly.", image: space },
+    { title: "Secure and Reliable", desc: "Licensed migration agents and registered employment services for your peace of mind.", image: shield },
+    { title: "Industry Expertise", desc: "Deep understanding of Australian job market trends and requirements across major industries.", image: medal },
   ];
 
   return (
-    <section className="bg-white mt-[100px] mb-[100px]">
+    <section className="bg-white my-[100px] w-full px-4">
       <div className="container mx-auto">
-        <div className="relative">
-          {/* Background Image */}
+        <div className="relative w-full">
+          {/* Background Image - Set to be responsive */}
           <img
-            className="w-full h-full object-cover min-h-[550px] md:min-h-[auto]"
+            className="w-full h-auto min-h-[500px] object-cover rounded-[40px]"
             src={WhyChooseImage}
             alt="Why Choose Us"
           />
 
-          <div className="absolute inset-0 flex flex-col items-center">
-            {/* Heading */}
-            <h2 className="absolute text-[32px] md:text-[40px] leading-[52px] text-center text-green-800 top-[40px] left-1/2 -translate-x-1/2 font-bold whitespace-nowrap">
+          <div className="absolute inset-0 flex flex-col items-center pt-[40px] md:pt-[60px]">
+            {/* Heading - Responsive text sizes */}
+            <h2 className="text-[28px] md:text-[40px] text-center text-green-800 font-bold whitespace-normal px-4">
               Why Choose Jobs N Visa?
             </h2>
 
-            <p className="absolute top-[102px] left-1/2 -translate-x-1/2 text-center text-green-800 text-[18px] md:text-[20px] font-medium whitespace-nowrap">
+            <p className="text-[16px] md:text-[20px] text-center text-green-800 font-medium mt-2 px-4">
               Your Success Is Our Achievement
             </p>
 
-            {/* Slider Wrapper - Added responsive padding top classes here */}
-            <div className="absolute top-[210px] sm:top-[220px] md:top-[240px] lg:top-[260px] w-full px-6">
+            {/* Slider Wrapper */}
+            <div className="w-full mt-10 md:mt-16 px-4 md:px-12">
               <Swiper
                 modules={[Autoplay, Pagination]}
                 loop={true}
                 speed={800}
-                autoplay={{
-                  delay: 5000,
-                  disableOnInteraction: false,
-                }}
-                pagination={{
-                  clickable: true,
-                  renderBullet: (index, className) => {
-                    return index < 4 ? `<span class="${className}"></span>` : '';
-                  },
-                }}
-                spaceBetween={40}
-                /* Explictly allowed overflow out of the slider box to accommodate the bullets */
-                className="!overflow-visible" 
+                autoplay={{ delay: 5000, disableOnInteraction: false, pauseOnMouseEnter: false }}
+                pagination={{ clickable: true }}
+                observer={true}
+                observeParents={true}
+                spaceBetween={20}
+                className="!overflow-visible pb-12 relative"
                 breakpoints={{
-                  0: {
-                    slidesPerView: 1,
-                  },
-                  768: {
-                    slidesPerView: 2,
-                  },
-                  1200: {
-                    slidesPerView: 4,
-                  },
+                  0: { slidesPerView: 1 },
+                  768: { slidesPerView: 2 },
+                  1024: { slidesPerView: 3 },
+                  1280: { slidesPerView: 4 },
                 }}
               >
-                {/* Fixed Pagination Styling with direct bottom offset positioning */}
                 <style>{`
+                  .swiper-pagination { 
+                    bottom: -30px !important;
+                    position: relative !important;
+                    display: flex !important;
+                    justify-content: center !important;
+                    gap: 8px;
+                  }
                   .swiper-pagination-bullet { 
                     background: #065f46 !important; 
                     opacity: 0.35; 
-                    width: 10px; 
-                    height: 10px;
-                    margin: 0 6px !important;
+                    width: 12px; 
+                    height: 12px;
+                    margin: 0 !important;
                   }
-                  .swiper-pagination-bullet-active { 
-                    background: #065f46 !important; 
-                    opacity: 1; 
-                  }
-                  /* This class forces space directly beneath your slider cards */
-                  .swiper-pagination { 
-                    position: absolute !important;
-                    bottom: -45px !important; 
-                    left: 0 !important;
-                    width: 100% !important;
-                  }
+                  .swiper-pagination-bullet-active { opacity: 1 !important; }
                 `}</style>
 
-                {[...items, ...items].map((item, idx) => (
-                  <SwiperSlide key={idx} className="pb-4">
-                    <div
-                      className="w-[350px] h-[180px] rounded-tl-[40px] rounded-tr-[40px] bg-green-50 border border-green-200 p-6 overflow-hidden mx-auto"
-                      style={{
-                        boxShadow: "0px 0px 10px 2px #049F441A",
-                      }}
-                    >
-                      <div className="flex items-start gap-4">
-                        {/* Icon */}
-                        <div className="relative flex-shrink-0">
-                          <div className="absolute -inset-2 bg-green-600/80 blur-xl rounded-full "></div>
-
-                          <img
-                            src={item.image}
-                            alt={item.title}
-                            className="relative z-10 w-12 h-12 object-contain"
-                          />
-                        </div>
-
-                        {/* Content */}
-                        <div className="flex-1 relative left-[10px]">
-                          <h3 className="text-green-800 text-[18px] md:text-[20px] font-bold mb-2 truncate">
-                            {item.title}
-                          </h3>
-
-                          <p className="text-green-800 text-[13px] md:text-[14px] font-medium leading-5 line-clamp-4">
-                            {item.desc}
-                          </p>
-                        </div>
+                {items.map((item, idx) => (
+                  <SwiperSlide key={idx} className="h-auto">
+                    <div className="w-full max-w-[350px] h-[180px] rounded-tl-[40px] rounded-tr-[40px] bg-green-50 border border-green-200 p-6 mx-auto shadow-[0px_0px_10px_2px_#049F441A] flex items-start gap-4">
+                      <div className="relative flex-shrink-0">
+                        <div className="absolute -inset-2 bg-green-600/80 blur-xl rounded-full"></div>
+                        <img src={item.image} alt={item.title} className="relative z-10 w-10 h-10 object-contain" />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-green-800 text-[18px] font-bold mb-2">{item.title}</h3>
+                        <p className="text-green-800 text-[13px] font-medium leading-5 line-clamp-3">{item.desc}</p>
                       </div>
                     </div>
                   </SwiperSlide>
                 ))}
               </Swiper>
+              <div className="swiper-pagination" />
             </div>
           </div>
         </div>

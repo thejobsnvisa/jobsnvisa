@@ -1,63 +1,47 @@
+import { useState } from "react";
 import logo from "../assets/logo.svg";
+import { HiMenu, HiX } from "react-icons/hi"; 
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const menuItems = [
+    { name: "Home", href: "#home" },
+    { name: "Services", href: "#services" },
+    { name: "Recruiters", href: "#recruiters" },
+    { name: "Job Search", href: "#jobs" },
+    { name: "Blogs", href: "#blogs" },
+  ];
+
   return (
     <nav aria-label="Main navigation" className="w-full">
-      <div className="relative w-full h-[100px] px-10 bg-green-100 rounded-bl-[60px] rounded-br-[60px] flex items-center justify-center">
-
+      {/* Container switches to lg:justify-center only at 1024px+ */}
+      <div className="relative w-full h-auto min-h-[100px] px-6 lg:px-10 bg-green-100 rounded-bl-[40px] rounded-br-[40px] flex items-center justify-between lg:justify-center">
+        
         {/* Logo */}
-        <img
-          src={logo}
-          alt="Logo"
-          className="h-12 w-36 absolute left-20"
-        />
+        <img src={logo} alt="Logo" className="h-10 w-28 lg:h-12 lg:w-36 lg:absolute lg:left-20" />
 
-        {/* Menu */}
-        <ul className="flex items-center gap-10">
-          <li>
-            <a
-              href="#home"
-              className="text-green-800  font-base text-[20px] hover:font-bold transition"
-            >
-              Home
-            </a>
-          </li>
+        {/* Hamburger Icon - Hidden on lg (1024px) and above */}
+        <button 
+          className="lg:hidden text-green-800 text-3xl z-50"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? <HiX /> : <HiMenu />}
+        </button>
 
-          <li>
-            <a
-              href="#services"
-              className="text-green-800  font-base text-[20px] hover:font-bold transition"
-            >
-              Services
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="#recruiters"
-              className="text-green-800  font-base text-[20px] hover:font-bold transition"
-            >
-              Recruiters
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="#jobs"
-              className="text-green-800  font-base text-[20px] hover:font-bold transition"
-            >
-              Job Search
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="#blogs"
-              className="text-green-800  font-base text-[20px] hover:font-bold transition"
-            >
-              Blogs
-            </a>
-          </li>
+        {/* Menu - Hidden by default, flex on lg and above */}
+        <ul className={`${isOpen ? "flex" : "hidden"} lg:flex flex-col lg:flex-row absolute lg:relative top-[100px] lg:top-0 left-0 w-full lg:w-auto bg-green-100 lg:bg-transparent p-10 lg:p-0 gap-6 lg:gap-10 items-center transition-all duration-300 z-40`}>
+          {menuItems.map((item) => (
+            <li key={item.name}>
+              <a
+                href={item.href}
+                className="text-green-800 font-base text-[20px] hover:font-bold transition"
+                onClick={() => setIsOpen(false)}
+              >
+                {item.name}
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
     </nav>

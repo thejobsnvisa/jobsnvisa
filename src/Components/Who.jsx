@@ -3,55 +3,46 @@ import img2 from "../assets/img2.jpg";
 
 const Who = () => {
   return (
-    <section className="w-full min-h-[720px] bg-green-50 rounded-tl-[100px] rounded-tr-[100px]">
-      <div className="max-w-7xl mx-auto px-4 py-12">
+    <section className="w-full min-h-auto lg:min-h-[720px] bg-green-50 rounded-tl-[60px] lg:rounded-tl-[100px] rounded-tr-[60px] lg:rounded-tr-[100px] py-12">
+      <div className="max-w-7xl mx-auto px-4">
         <h1
-          className="text-center text-green-800 font-bold text-[35px] mt-2"
+          className="text-center text-green-800 font-bold text-[28px] lg:text-[35px] mt-2"
           style={{ fontFamily: "'Caudex', serif" }}
         >
           Who Is Jobs N Visa For?
         </h1>
 
-        <p className="text-center text-green-700 text-lg max-w-4xl mx-auto mt-6">
+        <p className="text-center text-green-700 text-base lg:text-lg max-w-4xl mx-auto mt-6 px-4">
           Jobs N Visa is designed for professionals seeking global opportunities
           and employers looking for skilled talent.
         </p>
 
-        <div className="flex flex-col md:flex-row justify-center gap-8 mt-16">
+        {/* Flex container handles stacking on mobile, row on desktop */}
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-8 mt-12 lg:mt-16">
+          
           {/* Card 1 */}
           <div
-            className="relative w-[540px] h-[450px] rounded-tl-[80px] rounded-tr-[80px] overflow-hidden"
+            className="relative w-full max-w-[540px] h-[450px] rounded-tl-[80px] rounded-tr-[80px] overflow-hidden"
             style={{
-              backgroundImage: `
-                linear-gradient(#21744480, #21744480),
-                url(${img1})
-              `,
+              backgroundImage: `linear-gradient(#21744480, #21744480), url(${img1})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
           >
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-8 text-center">
-              <h3
-                className="font-semibold text-[24px] text-green-50 mb-4"
-                style={{ fontFamily: "'Poppins', serif" }}
-              >
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-6 text-center">
+              <h3 className="font-semibold text-[24px] text-green-50 mb-4" style={{ fontFamily: "'Poppins', serif" }}>
                 For Job Seekers
               </h3>
-
-              <p className="w-[430px] text-[18px] leading-8 text-green-100 mt-6">
-                Offering complete guidance in finding Australian job
-                opportunities so that global talent can work and settle abroad
-                smoothly.
+              <p className="w-full max-w-[430px] text-[16px] lg:text-[18px] leading-8 text-green-100 mt-2">
+                Offering complete guidance in finding Australian job opportunities so that global talent can work and settle abroad smoothly.
               </p>
-
-              <div className="flex flex-col items-center mt-10">
-                <ul className="w-[295px] text-left font-semibold text-[16px] text-green-50 space-y-2 mb-8">
+              <div className="flex flex-col items-center mt-6">
+                <ul className="w-full max-w-[295px] text-left font-semibold text-[14px] lg:text-[16px] text-green-50 space-y-2 mb-8">
                   <li>• Verified and trusted job openings</li>
                   <li>• Complete work visa guidance</li>
                   <li>• Support for overseas career start</li>
                 </ul>
-
-                <button className="bg-green-600 hover:bg-green-700 text-white px-10 py-3 rounded-lg font-medium transition">
+                <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-medium transition">
                   Explore Jobs
                 </button>
               </div>
@@ -60,37 +51,27 @@ const Who = () => {
 
           {/* Card 2 */}
           <div
-            className="relative w-[540px] h-[450px] rounded-tl-[80px] rounded-tr-[80px] overflow-hidden"
+            className="relative w-full max-w-[540px] h-[450px] rounded-tl-[80px] rounded-tr-[80px] overflow-hidden"
             style={{
-              backgroundImage: `
-                linear-gradient(#21744480, #21744480),
-                url(${img2})
-              `,
+              backgroundImage: `linear-gradient(#21744480, #21744480), url(${img2})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
           >
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-8 text-center">
-              <h3
-                className="font-semibold text-[24px] text-green-50 mb-4"
-                style={{ fontFamily: "'Poppins', serif" }}
-              >
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-6 text-center">
+              <h3 className="font-semibold text-[24px] text-green-50 mb-4" style={{ fontFamily: "'Poppins', serif" }}>
                 For Employers
               </h3>
-
-              <p className="w-[430px] text-[18px] leading-8 text-green-100 mt-6">
-                Providing end-to-end support to hire skilled global talent and
-                manage visa sponsorships without any hassle.
+              <p className="w-full max-w-[430px] text-[16px] lg:text-[18px] leading-8 text-green-100 mt-2">
+                Providing end-to-end support to hire skilled global talent and manage visa sponsorships without any hassle.
               </p>
-
-              <div className="flex flex-col items-center mt-10">
-                <ul className="w-[447px] text-left font-semibold text-[16px] text-green-50 space-y-2 mb-8 ">
+              <div className="flex flex-col items-center mt-6">
+                <ul className="w-full max-w-[447px] text-left font-semibold text-[14px] lg:text-[16px] text-green-50 space-y-2 mb-8">
                   <li>• Access to pre-screened international candidates</li>
                   <li>• Labour agreement & visa guidance</li>
                   <li>• Assistance throughout recruitment and onboarding</li>
                 </ul>
-
-                <button className="bg-green-600 hover:bg-green-700 text-white px-10 py-3 rounded-lg font-medium transition">
+                <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-medium transition">
                   Hire Talent
                 </button>
               </div>
