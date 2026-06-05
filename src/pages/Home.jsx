@@ -3,6 +3,7 @@ import Hero from "../Components/Hero"
 import Vision from "../Components/Vision"
 import WhyChoose from "../Components/WhyChoose"
 import Who from "../Components/Who"
+import ProcessOverview from "../Components/ProcessOverview"
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
      <Vision />
      <WhyChoose />
      <Who />
+     <ProcessOverview/>
     </div>
   )
 }
