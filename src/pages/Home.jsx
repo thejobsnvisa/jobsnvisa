@@ -4,6 +4,7 @@ import Vision from "../Components/Vision"
 import WhyChoose from "../Components/WhyChoose"
 import Who from "../Components/Who"
 import ProcessOverview from "../Components/ProcessOverview"
+import FAQ from "../Components/FAQ"
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
      <WhyChoose />
      <Who />
      <ProcessOverview/>
+     <FAQ/>
     </div>
   )
 }
