@@ -20,14 +20,14 @@ const socialIcons = [
 const Footer = () => {
   return (
     <div className="w-full rounded-tl-[80px] rounded-tr-[80px] bg-[#e4ffec] mt-10">
-      <div className="max-w-[1440px] mx-auto px-10 py-16 ml-20">
-        <div className="flex flex-wrap justify-between gap-6 ">
-          <div className="max-w-[331px]">
+      <div className="max-w-[1440px] mx-auto px-6 sm:px-10 py-16">
+        <div className="flex flex-col lg:flex-row justify-between gap-10">
+          <div className="w-full lg:max-w-[331px]">
             <img src={logo} alt="logo" className="w-[183px] h-[48px]" />
             <p className="mt-4 text-base text-black">
               Your gateway to career excellence in Australia
             </p>
-            <div className="flex flex-wrap items-center gap-4 mt-8 ">
+            <div className="flex flex-wrap items-center gap-4 mt-8">
               {socialIcons.map(({ src, alt, href }) => (
                 <a
                   key={alt}
@@ -42,7 +42,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="min-w-[180px]">
+          <div className="w-full sm:w-auto min-w-[180px]">
             <h3 className="text-[18px] font-bold text-green-700">Support</h3>
             <div className="mt-4 space-y-3 text-base text-green-900">
               <Link to="/help-center" className="block hover:underline">
@@ -60,7 +60,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="min-w-[220px] mr-20">
+          <div className="w-full sm:w-auto min-w-[220px]">
             <h3 className="text-[18px] font-bold text-green-700">Contact Info</h3>
             <div className="mt-4 space-y-3 text-base text-green-900">
               <p className="flex items-center gap-2">
