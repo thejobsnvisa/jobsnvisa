@@ -1,5 +1,5 @@
 import emailIcon from "../assets/email.svg";
-import phoneIcon from "../assets/phone.svg";
+import phoneIcon from "../assets/Phone.svg";
 import locationIcon from "../assets/Location.svg";
 import background from "../assets/background.jpg";
 

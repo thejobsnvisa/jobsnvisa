@@ -4,7 +4,7 @@ import linkdinIcon from "../assets/Linkdin.svg";
 import youtubeIcon from "../assets/Youtube.svg";
 import instagramIcon from "../assets/Instagram.svg";
 import emailIcon from "../assets/email.svg";
-import phoneIcon from "../assets/phone.svg";
+import phoneIcon from "../assets/Phone.svg";
 import locationIcon from "../assets/Location.svg";
 import xIcon from "../assets/X.svg";
 import { Link } from "react-router-dom";
