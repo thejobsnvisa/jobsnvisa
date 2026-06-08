@@ -1,38 +1,96 @@
-import Process from '../assets/Process.png'
+import Process from "../assets/Process.png";
 const ProcessOverview = () => {
-  const steps = [
-    { title: "Inquiry", desc: "Online: query by contacting us through WhatsApp or website or call us directly." },
-    { title: "Registration", desc: "Book a consultation with our agent and get the best services." },
-    { title: "Documentation", desc: "Gather and prepare all required documents." },
-    { title: "Lodgment", desc: "Lodge your visa application with precision." },
-    { title: "Support", desc: "Receive ongoing guidance throughout the process." },
-  ];
-
   return (
-    <section className="w-full py-16 px-4">
+    <section className="w-full py-12 px-4">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-center text-orange-300 text-3xl font-bold mb-12" style={{ fontFamily: "'Dangrek', cursive" }}>
+        <h2
+          className="text-center text-orange-300 text-3xl font-bold mt-4"
+          style={{ fontFamily: "'Dangrek', cursive" }}
+        >
           Process Overview
         </h2>
 
-        <div className="flex flex-col lg:flex-row items-center gap-12">
+        <div className="flex flex-col lg:flex-row items-center gap-6">
           {/* Stethoscope Image - Scales down on mobile */}
-          <div className="w-full lg:w-1/3 flex justify-center">
-            <img 
-              src={Process} 
-              alt="Process" 
-              className="w-[250px] lg:w-[400px] h-auto object-contain opacity-[]" 
+          <div className="relative w-full lg:w-1/3 flex justify-center">
+            <img
+              src={Process}
+              alt="Process"
+              className="relative z-10 w-[250px] lg:w-[485px] h-[485px] rotate-[20deg] object-contain opacity-50"
             />
-          </div>
-
-          {/* Grid Layout - 1 column on mobile, 2 on tablet, 3 on desktop */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full lg:w-2/3">
-            {steps.map((step, index) => (
-              <div key={index} className="bg-green-50 p-6 rounded-2xl border-l-4 border-green-600 shadow-sm">
-                <h3 className="font-bold text-green-900 text-lg mb-2">{step.title}</h3>
-                <p className="text-green-700 text-sm leading-relaxed">{step.desc}</p>
+            <div className="absolute bg-green-100 w-[954px] h-[300px] top-[100px] left-[360px] rounded-tl-[50px] rounded-tr-[50px]">
+              <div className="absolute w-[260px] p-4 top-[170px] left-[25px] rounded-[30px] mb-4">
+                <h3
+                  className="text-[20px] font-semibold text-center text-green-700 mb-2"
+                  style={{ fontFamily: "Poppins, sans-serif" }}
+                >
+                  Inquiry
+                </h3>
+                <p
+                  className="font-normal w-[165px] text-[14px] ml-8 leading-[20px] text-center text-[#313131]"
+                  style={{ fontFamily: "Poppins, sans-serif" }}
+                >
+                  Raise query by contacting us through WhatsApp / website or
+                  call us directly.
+                </p>
               </div>
-            ))}
+              <div className="absolute w-[260px] p-4 top-[30px] left-[190px] rounded-[30px]">
+                <h3
+                  className="text-[20px] w-[160px] ml-8 font-semibold text-center text-green-700 mb-2"
+                  style={{ fontFamily: "Poppins, sans-serif" }}
+                >
+                  Registration
+                </h3>
+                <p
+                  className="font-normal w-[165px] ml-8 text-[14px] leading-[20px] text-center text-[#313131]"
+                  style={{ fontFamily: "Poppins, sans-serif" }}
+                >
+                  Book a consultation with our agent and get the best services.
+                </p>
+              </div>
+              <div className="absolute w-[260px] p-4 top-[170px] left-[385px] rounded-[30px]">
+                <h3
+                  className="text-[20px] font-semibold text-center text-green-700 mb-2"
+                  style={{ fontFamily: "Poppins, sans-serif" }}
+                >
+                  Documentation
+                </h3>
+                <p
+                  className="font-normal w-[165px] text-[14px] ml-8 leading-[20px] text-center text-[#313131]"
+                  style={{ fontFamily: "Poppins, sans-serif" }}
+                >
+                  Gather and prepare all required documents.
+                </p>
+              </div>
+              <div className="absolute w-[260px] p-4 top-[30px] left-[565px] rounded-[30px]">
+                <h3
+                  className="text-[20px] w-[160px] ml-8 font-semibold text-center text-green-700 mb-2"
+                  style={{ fontFamily: "Poppins, sans-serif" }}
+                >
+                  Lodgment
+                </h3>
+                <p
+                  className="font-normal w-[165px] ml-8 text-[14px] leading-[20px] text-center text-[#313131]"
+                  style={{ fontFamily: "Poppins, sans-serif" }}
+                >
+                  Lodge your visa application with precision.{" "}
+                </p>
+              </div>
+              <div className="absolute w-[260px] p-4 top-[170px] left-[685px] rounded-[30px]">
+                <h3
+                  className="text-[20px] font-semibold text-center text-green-700 mb-2"
+                  style={{ fontFamily: "Poppins, sans-serif" }}
+                >
+                  Support
+                </h3>
+                <p
+                  className="font-normal w-[165px] text-[14px] ml-8 leading-[20px] text-center text-[#313131]"
+                  style={{ fontFamily: "Poppins, sans-serif" }} 
+                >
+                  Receive ongoing guidance throughout the process.{" "}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
