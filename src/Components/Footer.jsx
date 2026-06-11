@@ -19,7 +19,7 @@ const socialIcons = [
 
 const Footer = () => {
   return (
-    <div className="w-full rounded-tl-[80px] rounded-tr-[80px] bg-[#e4ffec] mt-10">
+    <div className="w-full rounded-tl-[30px] rounded-tr-[30px] lg:rounded-tl-[30px] lg:rounded-tr-[30px] bg-[#e4ffec] mt-10">
       <div className="max-w-[1440px] mx-auto px-6 sm:px-10 py-16">
         <div className="flex flex-col lg:flex-row justify-between gap-10">
           <div className="w-full lg:max-w-[331px]">

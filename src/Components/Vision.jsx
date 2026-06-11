@@ -8,7 +8,7 @@ const Vision = () => {
         Mobile: Full width, auto height, flex column 
         Desktop: lg:w-[1420px] lg:h-[498px] absolute-like behavior 
       */}
-      <div className="w-full lg:w-[1420px] lg:h-[498px] lg:mt-[70px] lg:mx-auto rounded-tl-[60px] lg:rounded-tl-[120px] rounded-tr-[60px] lg:rounded-tr-[120px] bg-green-100 relative flex flex-col lg:block items-center py-10 lg:py-0">
+      <div className="w-full lg:w-[1420px] lg:h-[498px] lg:mt-[70px] lg:mx-auto rounded-tl-[30px] lg:rounded-tl-[120px] rounded-tr-[30px] lg:rounded-tr-[120px] bg-green-100 relative flex flex-col lg:block items-center py-10 lg:py-0">
         
         {/* Image: Stays fixed on desktop, responsive on mobile */}
         <div className="w-[300px] h-[300px] lg:w-[478px] lg:h-[400px] lg:top-[100px] lg:left-[-30px]  rounded-tl-[120px] rounded-tr-[60px] lg:absolute overflow-hidden mb-8 lg:mb-0">

@@ -7,7 +7,7 @@ const GetInTouch = () => {
   return (
      <div className="w-full flex justify-center px-4 sm:px-6">
         <div
-          className="relative w-full max-w-[1300px] min-h-[470px] rounded-tl-[80px] rounded-tr-[80px] overflow-hidden bg-cover bg-center"
+          className="relative w-full max-w-[1300px] min-h-[470px] rounded-tl-[30px] rounded-tr-[30px] lg:rounded-tl-[80px] lg:rounded-tr-[80px] overflow-hidden bg-cover bg-center"
           style={{
             backgroundImage: `url(${background})`,
           }}
@@ -18,7 +18,7 @@ const GetInTouch = () => {
               Get In Touch
             </h2>
             <div className="w-full max-w-[1138px] grid gap-6 md:grid-cols-3">
-              <div className="bg-white/80 backdrop-blur-md rounded-tl-[30px] rounded-tr-[30px] relative w-full min-h-[220px] p-8 shadow-xl text-center">
+              <div className="bg-white/80 backdrop-blur-md rounded-tl-[30px] rounded-tr-[30px] relative w-full min-h-[60px] lg:min-h-[220px] p-8 shadow-xl text-center">
                 <div className="absolute -top-6 md:left-[10px] lg:left-[20px] -translate-x-1/2 h-[51px] w-[51px] bg-green-200 rounded-tl-[18px] rounded-tr-[18px] rounded-bl-[18px] p-[8px] flex items-center justify-center">
                   <img src={emailIcon} alt="email" />
                 </div>
@@ -30,9 +30,8 @@ const GetInTouch = () => {
                   Response within 24 hours
                 </p>
               </div>
-              <div className="bg-white/80 backdrop-blur-md rounded-tl-[30px] rounded-tr-[30px] relative w-full min-h-[220px] p-8 shadow-xl text-center">
+              <div className="bg-white/80 backdrop-blur-md rounded-tl-[30px] rounded-tr-[30px] relative w-full min-h-[60px] lg:min-h-[220px] p-8 shadow-xl text-center">
                 <div className="absolute -top-6 md:left-[10px] lg:left-[20px] -translate-x-1/2 h-[51px] w-[51px] bg-green-200 rounded-tl-[18px] rounded-tr-[18px] rounded-bl-[18px] p-[8px] flex items-center justify-center">
-                  {" "}
                   <img src={phoneIcon} alt="phone" />
                 </div>
                 <h3 className="text-xl text-orange-600 mb-3 mt-6">Phone</h3>
@@ -41,7 +40,7 @@ const GetInTouch = () => {
                   Monday – Friday 9:00 AM – 6:00 PM AEST
                 </p>
               </div>
-              <div className="bg-white/80 backdrop-blur-md rounded-tl-[30px] rounded-tr-[30px] relative w-full min-h-[220px] p-8 shadow-xl text-center">
+              <div className="bg-white/80 backdrop-blur-md rounded-tl-[30px] rounded-tr-[30px] relative w-full min-h-[60px] lg:min-h-[220px] p-8 shadow-xl text-center">
                 <div className="absolute -top-6 md:left-[10px] lg:left-[20px] -translate-x-1/2 h-[51px] w-[51px] bg-green-200 rounded-tl-[18px] rounded-tr-[18px] rounded-bl-[18px] p-[8px] flex items-center justify-center">
                   <img src={locationIcon} alt="location" />
                 </div>

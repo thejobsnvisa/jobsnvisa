@@ -19,7 +19,7 @@ const About = () => {
         
         {/* Left: Image Container */}
         {/* Uses lg:w-[574px] and lg:h-[400px] to match your desktop specs */}
-        <div className="w-full max-w-[574px] h-[360px] lg:h-[380px] rounded-tl-[60px] rounded-tr-[60px] overflow-hidden  lg:mt-32">
+        <div className="w-full max-w-[574px] h-[360px] lg:h-[380px] rounded-tl-[30px] rounded-tr-[30px] lg:rounded-tl-[60px] lg:rounded-tr-[60px] overflow-hidden lg:mt-32">
           <img
             className="w-full h-full object-cover"
             src={aboutImage}
@@ -29,7 +29,7 @@ const About = () => {
 
         {/* Right: Content Card */}
         {/* Uses lg:w-[780px] to match your desktop specs */}
-        <div className="w-full lg:w-[780px] lg:min-h-[500px] rounded-tl-[80px] rounded-tr-[80px] bg-green-100 p-6 md:p-10 flex flex-col justify-center">
+        <div className="w-full lg:w-[780px] lg:min-h-[500px] rounded-tl-[30px] rounded-tr-[30px] lg:rounded-tl-[80px] lg:rounded-tr-[80px] bg-green-100 p-6 md:p-10 flex flex-col justify-center">
           <p className="text-[16px] leading-[30px] text-green-950 font-medium text-justify mb-8"
              style={{ fontFamily: "'Poppins', sans-serif" }}>
             At Jobs N Visa, we understand that finding the right opportunities in our careers is more than just landing a job, it's about building a future. With over a decade of experience in the Australian job market, we specialize in connecting skilled professionals with employers across critical industries.<br /><br /> 

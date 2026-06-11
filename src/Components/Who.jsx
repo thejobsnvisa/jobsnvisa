@@ -3,7 +3,7 @@ import img2 from "../assets/img2.jpg";
 
 const Who = () => {
   return (
-    <section className="w-full min-h-auto lg:min-h-[720px] bg-green-50 rounded-tl-[60px] lg:rounded-tl-[100px] rounded-tr-[60px] lg:rounded-tr-[100px] py-12">
+    <section className="w-full min-h-auto lg:min-h-[720px] bg-green-50 rounded-tl-[30px] lg:rounded-tl-[100px] rounded-tr-[30px] lg:rounded-tr-[100px] py-12">
       <div className="max-w-7xl mx-auto px-4">
         <h1
           className="text-center text-green-800 font-bold text-[28px] lg:text-[35px] mt-2"
@@ -22,7 +22,7 @@ const Who = () => {
           
           {/* Card 1 */}
           <div
-            className="relative w-full max-w-[540px] h-[450px] rounded-tl-[80px] rounded-tr-[80px] overflow-hidden"
+            className="relative w-full max-w-[540px] h-[450px] rounded-tl-[30px] rounded-tr-[30px] lg:rounded-tl-[80px] lg:rounded-tr-[80px] overflow-hidden"
             style={{
               backgroundImage: `linear-gradient(#21744480, #21744480), url(${img1})`,
               backgroundSize: "cover",
@@ -51,7 +51,7 @@ const Who = () => {
 
           {/* Card 2 */}
           <div
-            className="relative w-full max-w-[540px] h-[450px] rounded-tl-[80px] rounded-tr-[80px] overflow-hidden"
+            className="relative w-full max-w-[540px] h-[450px] rounded-tl-[30px] rounded-tr-[30px] lg:rounded-tl-[80px] lg:rounded-tr-[80px] overflow-hidden"
             style={{
               backgroundImage: `linear-gradient(#21744480, #21744480), url(${img2})`,
               backgroundSize: "cover",
