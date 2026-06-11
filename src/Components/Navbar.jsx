@@ -32,12 +32,15 @@ const Navbar = () => {
         <button 
           className="lg:hidden text-green-800 text-3xl z-50"
           onClick={() => setIsOpen(!isOpen)}
+          aria-label={isOpen ? "Close menu" : "Open menu"}
+          aria-controls="main-navigation"
+          aria-expanded={isOpen}
         >
           {isOpen ? <HiX /> : <HiMenu />}
         </button>
 
         {/* Menu - Hidden by default, flex on lg and above */}
-        <ul className={`${isOpen ? "flex" : "hidden"} lg:flex flex-col lg:flex-row absolute lg:relative top-full lg:top-0 left-0 w-full lg:w-auto bg-green-100 lg:bg-transparent p-10 lg:p-0 gap-6 lg:gap-10 items-center transition-all duration-300 z-40`}>
+        <ul id="main-navigation" className={`${isOpen ? "flex" : "hidden"} lg:flex flex-col lg:flex-row absolute lg:relative top-full lg:top-0 left-0 w-full lg:w-auto bg-green-100 lg:bg-transparent py-6 px-6 lg:p-0 gap-6 lg:gap-10 items-start lg:items-center transition-all duration-300 z-40`}>
           {menuItems.map((item) => (
             <li
               key={item.name}
