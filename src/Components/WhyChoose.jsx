@@ -78,7 +78,7 @@ const WhyChoose = () => {
 
                 {items.map((item, idx) => (
                   <SwiperSlide key={idx} className="h-auto">
-                    <div className="w-full max-w-[350px] h-[180px] rounded-tl-[40px] rounded-tr-[40px] bg-green-50 border border-green-200 p-6 mx-auto shadow-[0px_0px_10px_2px_#049F441A] flex items-start gap-4">
+                    <div className="w-full max-w-[350px] h-[180px] rounded-[40px] bg-green-50 border border-green-200 p-6 mx-auto shadow-[0px_0px_10px_2px_#049F441A] flex items-start gap-4">
                       <div className="relative flex-shrink-0">
                         <div className="absolute -inset-2 bg-green-600/80 blur-xl rounded-full"></div>
                         <img src={item.image} alt={item.title} className="relative z-10 w-10 h-10 object-contain" />
