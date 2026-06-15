@@ -43,8 +43,8 @@ const Footer = () => {
           </div>
 
           <div className="w-full sm:w-auto min-w-[180px]">
-            <h3 className="text-[18px] font-bold text-green-700">Support</h3>
-            <div className="mt-4 space-y-3 text-base text-green-900">
+            <h3 className="text-[18px] font-bold text-green-900">Support</h3>
+            <div className="mt-4 space-y-3 text-base text-green-800">
               <Link to="/help-center" className="block hover:underline">
                 Help Center
               </Link>
@@ -61,8 +61,8 @@ const Footer = () => {
           </div>
 
           <div className="w-full sm:w-auto min-w-[220px]">
-            <h3 className="text-[18px] font-bold text-green-700">Contact Info</h3>
-            <div className="mt-4 space-y-3 text-base text-green-900">
+            <h3 className="text-[18px] font-bold text-green-900">Contact Info</h3>
+            <div className="mt-4 space-y-3 text-base text-green-800">
               <p className="flex items-center gap-2">
                 <img src={phoneIcon} alt="phone" className="h-6 w-6" />
                 <span>+61 3 8764 3335</span>

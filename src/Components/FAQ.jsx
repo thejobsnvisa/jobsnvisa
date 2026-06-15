@@ -57,7 +57,7 @@ function FAQ({ item, index, activeIndex, setActiveIndex }) {
   };
 
   return (
-    <div className="mb-5 break-inside-avoid border border-green-200 rounded-tl-[16px] rounded-tr-[16px] bg-[#F3FBF4] overflow-hidden">
+    <div className="mb-5 break-inside-avoid border border-green-200 rounded-tl-[16px] rounded-bl-[16px] rounded-tr-[16px] bg-[#F3FBF4] overflow-hidden">
       {/* Question */}
       <button
         type="button"
@@ -66,7 +66,7 @@ function FAQ({ item, index, activeIndex, setActiveIndex }) {
         onClick={toggleFAQ}
         className="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-green-100 transition-colors"
       >
-        <span className="font-medium text-green-900">
+        <span className="font-bold text-green-800">
           {item.question}
         </span>
 
@@ -87,7 +87,7 @@ function FAQ({ item, index, activeIndex, setActiveIndex }) {
         }`}
       >
         <div className="overflow-hidden">
-          <div className="px-5 pb-4 text-sm text-gray-600 leading-relaxed">
+          <div className="px-5 pb-4 text-sm font-base text-green-800 leading-relaxed">
             {item.answer}
           </div>
         </div>
