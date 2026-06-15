@@ -15,14 +15,14 @@ const Hero = () => {
           className="hidden md:block absolute md:top-[188px] md:left-[40px] md:w-[307px] md:h-[461px]"
         />
         <h1
-          className="text-orange-300 font-[Outfit] font-semibold text-[40px] leading-[1] tracking-[0%] mt-8 md:absolute md:right-[40px] md:top-[200px] md:text-right text-center"
+          className="text-orange-300 font-['Outfit'] font-semibold text-[40px] leading-[1] tracking-[0%] mt-8 md:absolute md:right-[80px] md:top-[200px] md:text-right text-center"
           style={{ fontFamily: "'Outfit', sans-serif" }}
         >
           Welcome to JobsNVisa
           <br /> & Start your Journey
         </h1>
         <p
-          className="mt-6 md:absolute md:top-[400px] md:left-1/2 md:w-[560px] md:-translate-x-1/2 text-center text-white font-[Caveat] text-[28px] leading-[100%] tracking-[0%]"
+          className="mt-4 md:absolute md:top-[340px] md:right-[-180px] md:w-[480px] md:-translate-x-1/2 text-center text-green-100 font-['Caveat'] text-[24px] leading-[100%] tracking-[0%]"
           style={{ fontFamily: "'Caveat', cursive" }}
         >
           Connect with top employers across Australia's fastest-growing
@@ -31,17 +31,17 @@ const Hero = () => {
           We bridge the gap between talent and opportunity with personalized
           visa and employment solutions.
         </p>
-        <div className="md:mt-2 mt-6 flex items-center gap-4 md:absolute md:top-[580px] md:left-1/2 md:-translate-x-1/2">
+        <div className="md:mt-2 mt-4 flex items-center gap-6 md:absolute md:top-[540px] md:right-[-60px] md:-translate-x-1/2">
           <a
             href="#"
-            className="bg-green-100 text-green-800 font-[Outfit] font-semibold text-[15px] leading-[100%] tracking-[0%] py-3 px-6 rounded-tr-[14px] rounded-tl-[14px] w-[160px] md:w-[200px] h-[48px] transition duration-300 text-center"
+            className="bg-green-100 text-green-800 font-['Poppins'] font-semibold text-[15px] leading-[100%] tracking-[0%] py-3 px-6 rounded-tr-[14px] rounded-tl-[14px] w-[160px] md:w-[200px] h-[48px] transition duration-300 text-center"
             style={{ fontFamily: "'Poppins', sans-serif" }}
           >
             Find Your Dream Job
           </a>
           <a
             href="#"
-            className="bg-amber-100 text-amber-800 font-[Outfit] font-semibold text-[15px] leading-[100%] h-[48px] tracking-[0%] py-3 px-6 rounded-tr-[14px] rounded-tl-[14px] w-[120px] md:w-auto hover:bg-orange-100 transition duration-300 text-center"
+            className="bg-amber-100 text-amber-800 font-['Poppins'] font-semibold text-[15px] leading-[100%] h-[48px] tracking-[0%] py-3 px-6 rounded-tr-[14px] rounded-tl-[14px] w-[120px] md:w-auto hover:bg-orange-100 transition duration-300 text-center"
             style={{ fontFamily: "'Poppins', sans-serif" }}
           >
             Post A Job
