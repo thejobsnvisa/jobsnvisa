@@ -46,7 +46,7 @@ const Who = () => {
                   <li>• Complete work visa guidance</li>
                   <li>• Support for overseas career start</li>
                 </ul>
-                <button className="bg-green-800 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-medium transition">
+                <button className=" w-[244px] h-[48px] pt-[12px] pr-[70px] pb-[12px] pl-[70px] gap-[4px] bg-green-800 hover:bg-green-700 text-white px-8 py-3 rounded-tl-[14px] rounded-tr-[14px] rounded-bl-[14px] font-medium transition">
                   Explore Jobs
                 </button>
               </div>
@@ -79,7 +79,7 @@ const Who = () => {
                   <li>• Labour agreement & visa guidance</li>
                   <li>• Assistance throughout recruitment and onboarding</li>
                 </ul>
-                <button className="bg-green-800 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-medium transition">
+                <button className=" w-[244px] h-[48px] pt-[12px] pr-[70px] pb-[12px] pl-[70px] gap-[4px] bg-green-800 hover:bg-green-700 text-white px-8 py-3 rounded-tl-[14px] rounded-tr-[14px] rounded-bl-[14px] font-medium transition">
                   Hire Talent
                 </button>
               </div>
