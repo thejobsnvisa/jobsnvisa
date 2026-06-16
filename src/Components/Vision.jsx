@@ -26,14 +26,14 @@ const Vision = () => {
 
         <div className="relative z-10 pt-8 sm:pt-10 lg:pt-8 text-center px-2 sm:px-4">
           <h2
-            className="text-3xl sm:text-4xl lg:text-[40px] font-bold text-[#1E5B42]"
+            className="text-3xl sm:text-4xl lg:text-[40px] font-bold text-green-900"
             style={{ fontFamily: "Caudex, serif" }}
           >
             Our Vision
           </h2>
 
           <p
-            className="mt-3 text-2xl sm:text-3xl lg:text-[40px] text-[#D97706]"
+            className="mt-6 text-2xl sm:text-3xl lg:text-[40px] font-medium text-amber-700"
             style={{ fontFamily: "Dangrek, cursive" }}
           >
             Building Bridges to New Beginnings

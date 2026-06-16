@@ -3,9 +3,9 @@ const ProcessOverview = () => {
   return (
     <section className="w-full py-8 md:py-12 px-4">
       <div className="max-w-7xl mx-auto">
-        <h2
-          className="text-center text-orange-300 text-2xl md:text-3xl font-bold mt-4 mb-8 md:mb-12"
-          style={{ fontFamily: "'Poppins', sans-serif" }}
+         <h2
+          className="text-center text-orange-300 font-bold text-[40px] lg:text-[40px] mt-2"
+          style={{ fontFamily: "'Caudex', serif" }}
         >
           Process Overview
         </h2>

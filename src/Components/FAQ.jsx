@@ -52,7 +52,7 @@ function FAQ({ item, index, activeIndex, setActiveIndex }) {
 
   const toggleFAQ = () => {
     setActiveIndex((prev) =>
-      isOpen ? prev.filter((i) => i !== index) : [...prev, index]
+      isOpen ? prev.filter((i) => i !== index) : [...prev, index],
     );
   };
 
@@ -66,9 +66,7 @@ function FAQ({ item, index, activeIndex, setActiveIndex }) {
         onClick={toggleFAQ}
         className="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-green-100 transition-colors"
       >
-        <span className="font-bold text-green-800">
-          {item.question}
-        </span>
+        <span className="font-bold text-green-800">{item.question}</span>
 
         {isOpen ? (
           <ChevronUp className="w-5 h-5 text-green-700 flex-shrink-0" />
@@ -81,9 +79,7 @@ function FAQ({ item, index, activeIndex, setActiveIndex }) {
       <div
         id={`faq-answer-${index}`}
         className={`grid transition-all duration-300 ease-in-out ${
-          isOpen
-            ? "grid-rows-[1fr] opacity-100"
-            : "grid-rows-[0fr] opacity-0"
+          isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
         }`}
       >
         <div className="overflow-hidden">
@@ -103,7 +99,10 @@ export default function BottomSections() {
     <div className="w-full bg-white">
       <section className="max-w-7xl mx-auto px-6 py-20">
         {/* Heading */}
-        <h2 className="text-4xl font-semibold text-center text-green-900 mb-14">
+        <h2
+          className="text-4xl font-semibold text-center text-green-900 mb-14"
+          style={{ fontFamily: "'Caudex', serif" }}
+        >
           Frequently Asked Questions
         </h2>
 

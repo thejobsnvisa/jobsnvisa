@@ -7,7 +7,7 @@ const About = () => {
     <section className="w-full max-w-[1440px] mx-auto py-12 md:py-20 px-6 lg:px-20 bg-white">
       {/* Title */}
       <h1
-        className="text-center text-amber-800 font-bold text-[32px] md:text-[40px] leading-[1] lg:flex lg:justify-center mb-12"
+        className="text-center text-amber-800 font-bold text-[40px] md:text-[40px] leading-[1] lg:flex lg:justify-center mb-12"
         style={{ fontFamily: "'Caudex', serif" }}
       >
         About Jobs N Visa
@@ -29,7 +29,7 @@ const About = () => {
         {/* Right: Content Card */}
         <div className="w-full sm:w-[90%] md:w-[85%] lg:w-[780px] lg:min-h-[500px] rounded-tl-[20px] sm:rounded-tl-[30px] lg:rounded-tl-[80px] rounded-tr-[20px] sm:rounded-tr-[30px] lg:rounded-tr-[80px] bg-white p-4 sm:p-6 md:p-10 flex flex-col justify-center">
           <p
-            className="text-[14px] sm:text-[15px] md:text-[16px] leading-[26px] sm:leading-[28px] md:leading-[30px] text-green-950 font-medium text-justify mb-6 sm:mb-8"
+            className="text-[16px] sm:text-[15px] md:text-[16px] leading-[26px] sm:leading-[28px] md:leading-[30px] text-green-950 font-medium text-justify mb-6 sm:mb-8"
             style={{ fontFamily: "'Poppins', sans-serif" }}
           >
             At Jobs N Visa, we understand that finding the right opportunities
