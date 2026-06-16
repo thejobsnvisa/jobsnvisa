@@ -5,7 +5,7 @@ const Vision = () => {
   return (
     <section className="w-full px-4 mt-[70px]">
       <div
-        className="relative mx-auto max-w-[1420px] min-h-[520px] overflow-hidden rounded-[30px] sm:rounded-[40px] lg:rounded-[120px] bg-cover bg-center bg-no-repeat"
+        className="relative mx-auto max-w-[1420px] min-h-[520px] overflow-hidden rounded-tr-[30px] rounded-br-[30px] rounded-bl-[30px] sm:rounded-tr-[40px] sm:rounded-br-[40px] sm:rounded-bl-[40px] lg:rounded-tr-[120px] lg:rounded-bl-[120px] lg:rounded-br-[120px] bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: `
             linear-gradient(
