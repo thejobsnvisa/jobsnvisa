@@ -63,18 +63,18 @@ const Footer = () => {
           <div className="w-full sm:w-auto min-w-[220px]">
             <h3 className="text-[18px] font-bold text-green-900">Contact Info</h3>
             <div className="mt-4 space-y-3 text-base text-green-800">
-              <p className="flex items-center gap-2">
+              <a href="tel:+61387643335" className="flex items-center gap-2 hover:underline">
                 <img src={phoneIcon} alt="phone" className="h-6 w-6" />
                 <span>+61 3 8764 3335</span>
-              </p>
-              <p className="flex items-center gap-2">
+              </a>
+              <a href="mailto:info@jobsnvisa.com.au" className="flex items-center gap-2 hover:underline">
                 <img src={emailIcon} alt="email" className="h-6 w-6" />
                 <span>info@jobsnvisa.com.au</span>
-              </p>
-              <p className="flex items-center gap-2">
+              </a>
+              <a href="https://maps.google.com/?q=Sydney,Melbourne,Brisbane" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:underline">
                 <img src={locationIcon} alt="location" className="h-6 w-6" />
                 <span>Sydney, Melbourne, Brisbane</span>
-              </p>
+              </a>
             </div>
           </div>
         </div>

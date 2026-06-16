@@ -29,7 +29,7 @@ const About = () => {
         {/* Right: Content Card */}
         <div className="w-full sm:w-[90%] md:w-[85%] lg:w-[780px] lg:min-h-[500px] rounded-tl-[20px] sm:rounded-tl-[30px] lg:rounded-tl-[80px] rounded-tr-[20px] sm:rounded-tr-[30px] lg:rounded-tr-[80px] bg-white p-4 sm:p-6 md:p-10 flex flex-col justify-center">
           <p
-            className="text-[16px] sm:text-[15px] md:text-[16px] leading-[26px] sm:leading-[28px] md:leading-[30px] text-green-950 font-medium text-justify mb-6 sm:mb-8"
+            className="lg:text-[16px] sm:text-[15px] md:text-[16px] leading-[26px] sm:leading-[28px] md:leading-[30px] text-green-950 font-medium text-justify mb-6 sm:mb-8"
             style={{ fontFamily: "'Poppins', sans-serif" }}
           >
             At Jobs N Visa, we understand that finding the right opportunities
@@ -45,7 +45,7 @@ const About = () => {
           </p>
 
           {/* Features - Stacked on mobile, remains as requested */}
-          <div className="flex flex-col gap-3 sm:gap-4">
+          <div className="flex flex-col gap-4 sm:gap-4 mb-4">
             {[
               "Expert Visa Guidance",
               "Ongoing Professional Support",
