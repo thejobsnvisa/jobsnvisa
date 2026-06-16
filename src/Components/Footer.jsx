@@ -10,11 +10,11 @@ import xIcon from "../assets/X.svg";
 import { Link } from "react-router-dom";
 
 const socialIcons = [
-  { src: facebookIcon, alt: "facebook", href: "https://www.facebook.com" },
-  { src: linkdinIcon, alt: "linkedin", href: "https://www.linkedin.com" },
-  { src: youtubeIcon, alt: "youtube", href: "https://www.youtube.com" },
-  { src: instagramIcon, alt: "instagram", href: "https://www.instagram.com" },
-  { src: xIcon, alt: "x", href: "https://x.com" },
+  { src: facebookIcon, alt: "facebook", href: "https://www.facebook.com/thejobsnvisa/about/?id=61579092253323&sk=about#" },
+  { src: linkdinIcon, alt: "linkedin", href: "https://au.linkedin.com/company/the-jobs-n-visa-pty-ltd?trk=public_post_feed-actor-image" },
+  { src: youtubeIcon, alt: "youtube", href: "https://www.youtube.com/@JobsNVisa" },
+  { src: instagramIcon, alt: "instagram", href: "https://www.instagram.com/jobsnvisa/" },
+  { src: xIcon, alt: "x", href: "https://x.com/thejobsnvisa" },
 ];
 
 const Footer = () => {
