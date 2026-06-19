@@ -6,16 +6,16 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
-    { name: "Home", href: "#home" },
+    { name: "Home", href: "/" },
     { name: "Services", href: "#services" },
-    { name: "Recruiters", href: "#recruiters" },
+    { name: "Recruiters", href: "/recruiters" },
     { name: "Job Search", href: "#jobs" },
     { name: "Blogs", href: "#blogs" },
   ];
 
   const serviceItems = [
-    { name: "Recruiter Services", href: "#recruiters" },
-    { name: "Employer Services", href: "#employers" },
+    { name: "Recruiter Services", href: "/recruiters" },
+    { name: "Employer Services", href: "/employers" },
   ];
 
   const [isServicesOpen, setIsServicesOpen] = useState(false);
