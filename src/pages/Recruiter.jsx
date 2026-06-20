@@ -1,4 +1,7 @@
 import r1 from "../assets/recruiter.png";
+import r4 from "../assets/r4.png";
+import r2 from "../assets/r2.png";
+import r3 from "../assets/r3.png";
 import job from "../assets/job.svg";
 const Recruiter = () => {
   return (
@@ -46,6 +49,92 @@ const Recruiter = () => {
               alt="recruiter image"
               className="w-full h-full object-cover"
             />
+          </div>
+        </div>
+      </div>
+      <div className="w-[1440px] h-[500px] bg-white py-10 mt-6">
+        <h3
+          className="max-w-[800px] mx-auto mt-8 text-[40px] font-bold text-amber-700 text-center"
+          style={{
+            fontFamily: "'Caudex', cursive",
+            fontWeight: 700,
+            lineHeight: "100%",
+          }}
+        >
+          Onboarding & Retention Support
+        </h3>
+        <div className="max-w-[1350px] mx-auto mt-14 rounded-[40px] overflow-hidden">
+          <div className="grid grid-cols-3 gap-4">
+            <div className="rounded-[40px] overflow-hidden relative h-[286px] w-[400px]">
+              <img
+                src={r4}
+                alt="Employee Onboarding"
+                className="w-full h-full object-cover"
+              />
+              <div
+                className="absolute inset-0 p-6 flex flex-col justify-end gap-2"
+                style={{
+                  background:
+                    "linear-gradient(184.15deg, rgba(0, 0, 0, 0) 45.11%, rgba(0, 0, 0, 0.6) 64.99%, #000000 96.62%)",
+                }}
+              >
+                <h4 className="text-white text-center text-[18px] w-[354px] h-[27px] font-semibold">
+                  Employee Onboarding
+                </h4>
+                <ul className="text-slate-300 text-[16px] w-[354px] h-[72px] text-center leading-[1.5] font-bold list-disc list-inside">
+                  <li>System & Access Setup Support</li>
+                  <li>Documentation & Joining Formalities</li>
+                  <li>Orientation & Company Policy Briefing</li>
+                </ul>
+              </div>
+            </div>
+            <div className="rounded-[40px] overflow-hidden relative h-[286px] w-[400px]">
+              <img
+                src={r2}
+                alt="Training & Development"
+                className="w-full h-full object-cover"
+              />
+              <div
+                className="absolute inset-0 p-6 flex flex-col justify-end gap-2"
+                style={{
+                  background:
+                    "linear-gradient(184.15deg, rgba(0, 0, 0, 0) 45.11%, rgba(0, 0, 0, 0.6) 64.99%, #000000 96.62%)",
+                }}
+              >
+                <h4 className="text-white text-center text-[18px] w-[354px] h-[27px] font-semibold">
+                  Training & Development
+                </h4>
+                <ul className="text-slate-300 text-[16px] w-[354px] h-[72px] text-center leading-[1.5] font-bold list-disc list-inside">
+                  {" "}
+                  <li>Skill Enhancement & Upskilling</li>
+                  <li>Role-Specific Training Programs</li>
+                  <li>Performance Monitoring & Feedback</li>
+                </ul>
+              </div>
+            </div>
+            <div className="rounded-[40px] overflow-hidden relative h-[286px] w-[400px]">
+              <img
+                src={r3}
+                alt="Retention & Engagement"
+                className="w-full h-full object-cover"
+              />
+              <div
+                className="absolute inset-0 p-6 flex flex-col justify-end gap-2"
+                style={{
+                  background:
+                    "linear-gradient(184.15deg, rgba(0, 0, 0, 0) 45.11%, rgba(0, 0, 0, 0.6) 64.99%, #000000 96.62%)",
+                }}
+              >
+                <h4 className="text-white text-center text-[18px] w-[354px] h-[27px] font-semibold">
+                  Retention & Engagement
+                </h4>
+                <ul className="text-slate-300 text-[16px] w-[354px] h-[72px] text-center leading-[1.5] font-bold list-disc list-inside">
+                  <li>Employee Engagement Initiatives</li>
+                  <li>Attrition Analysis & Retention Strategy</li>
+                  <li>Ongoing HR Support & Issue Resolution</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
