@@ -1,40 +1,149 @@
+import { useState } from "react";
 import r1 from "../assets/recruiter.png";
 import r4 from "../assets/r4.png";
 import r2 from "../assets/r2.png";
 import r3 from "../assets/r3.png";
+import r5 from "../assets/r5.png";
+import c1 from "../assets/c1.svg";
+import c2 from "../assets/c2.svg";
+import c3 from "../assets/c3.svg";
+import c4 from "../assets/c4.svg";
+import c5 from "../assets/c5.svg";
+import c6 from "../assets/c6.svg";
+import c7 from "../assets/c7.svg";
+import c8 from "../assets/c8.svg";
+import d1 from "../assets/d1.png";
+import d2 from "../assets/d2.png";
+import d3 from "../assets/d3.png";
+import d4 from "../assets/d4.png";
+import v1 from "../assets/v1.svg";
+import v2 from "../assets/v2.svg";
+import p1 from "../assets/p1.svg";
+import p2 from "../assets/p2.svg";
+import v3 from "../assets/v3.svg";
+import v4 from "../assets/v4.svg";
 import job from "../assets/job.svg";
+import h1 from "../assets/h1.png";
+import GetInTouch from "../Components/GetInTouch";
+
 const Recruiter = () => {
+  const payrollCards = [
+    {
+      icon: c1,
+      title: "Employer Peace of Mind",
+      description: "Focus on growth while we manage your payroll end-to-end.",
+    },
+    {
+      icon: c2,
+      title: "Payroll Reporting",
+      description:
+        "Detailed reports for audits, finance, and management review.",
+    },
+    {
+      icon: c3,
+      title: "Compliance Management",
+      description:
+        "Stay compliant with payroll regulations and statutory requirements.",
+    },
+    {
+      icon: c4,
+      title: "Accurate Payroll Processing",
+      description: "Timely and error-free salary calculations every pay cycle.",
+    },
+    {
+      icon: c5,
+      title: "Data Security",
+      description:
+        "Secure payroll data handling with confidentiality and protection.",
+    },
+    {
+      icon: c6,
+      title: "Employee Satisfaction",
+      description: "Timely and transparent payroll boosts employee confidence.",
+    },
+    {
+      icon: c7,
+      title: "Scalable Solutions",
+      description:
+        "Payroll support that grows with your business requirements.",
+    },
+    {
+      icon: c8,
+      title: "Cost Efficiency",
+      description: "Reduce operational overhead through payroll outsourcing.",
+    },
+  ];
+
+  // Permanent & Executive Recruitment section specific dataset configuration
+  const executiveCards = [
+    {
+      id: 1,
+      bgImage: d1,
+      title: "Expertise in Permanent Hiring",
+      description:
+        "We specialise in identifying skilled professionals and leaders who align with your company’s vision.",
+      icon: v1,
+    },
+    {
+      id: 2,
+      bgImage: d2,
+      title: "Global Executive Search",
+      description:
+        "Our services include international executive search and visa assistance for overseas hires.",
+      icon: v2,
+    },
+    {
+      id: 3,
+      bgImage: d3,
+      title: "Quality-Driven Recruitment",
+      description:
+        "Our thorough screening and evaluation process ensures hiring the right talent for you.",
+      icon: v3,
+    },
+    {
+      id: 4,
+      bgImage: d4,
+      title: "Access to Senior Talent Network",
+      description:
+        "We connect you with experienced professionals, managers, and executives across various industries.",
+      icon: v4,
+    },
+  ];
+
+  const [selectedIcon, setSelectedIcon] = useState();
+
   return (
-    <section className="max-w-[1420px] mx-auto px-4 pt-10 pb-12">
-      <div className="flex flex-col items-center text-center mt-24">
+    <section className="max-w-[1420px] mx-auto px-4 pt-10 pb-12 overflow-x-hidden">
+      <div className="flex flex-col items-center text-center mt-24 lg:mt-24">
         {/* Breadcrumb */}
-        <p className="font-[Poppins] text-[18px] font-normal leading-[100%] text-[#0D542B]">
+        <p className="font-[Poppins] text-[15px]  md:text-[18px] font-normal leading-[100%] text-[#0D542B]">
           Home &gt; Services &gt; Recruiter Services
         </p>
 
         {/* Title */}
-        <h1 className="mt-4 font-serif text-[22px] font-bold text-green-900">
+        <h1 className="mt-4 font-serif text-[20px] md:text-[22px] font-bold text-green-900">
           Recruiter Services
         </h1>
 
         {/* Subtitle */}
-        <p className="mt-4 max-w-[700px] font-[Poppins] text-[20px] italic font-semibold text-green-600">
+        <p className="mt-4 max-w-[700px] font-[Poppins] text-[16px] md:text-[20px] italic font-semibold text-green-600 px-2">
           Find the right skilled employees and job-ready talent with confidence
         </p>
 
-        <div className="w-full max-w-[1300px] min-h-[420px] mt-10 rounded-tl-[70px] rounded-tr-[70px] rounded-br-[70px] bg-green-100 mx-auto relative overflow-hidden">
-          <div className="absolute top-[60px] left-[60px]">
-            <h1 className="w-[366px] font-[Jost] font-bold italic text-[40px] leading-[120%] tracking-[0%] text-slate-600">
+        {/* Hero Card Banner */}
+        <div className="w-full max-w-[1300px] min-h-auto lg:min-h-[420px] mt-10 rounded-2xl lg:rounded-tl-[70px] lg:rounded-tr-[70px] lg:rounded-br-[70px] bg-green-100 mx-auto relative overflow-hidden flex flex-col lg:block p-6 md:p-10 lg:p-0">
+          <div className="relative lg:absolute lg:top-[60px] lg:left-[60px] flex flex-col items-center lg:items-start text-center lg:text-left z-10 order-2 lg:order-none">
+            <h1 className="w-full lg:w-[366px] font-[Jost] font-bold italic text-[26px] md:text-[32px] lg:text-[40px] leading-[120%] tracking-[0%] text-slate-600">
               Candidate Screening <br />& Vetting Service
             </h1>
-            <p className="max-w-[450px] mt-10 ml-2 text-justify font-[Poppins] text-[18px] leading-[150%] text-green-900 text-left">
+            <p className="max-w-[450px] mt-4 lg:mt-10 lg:ml-2 text-justify font-[Poppins] text-[15px] md:text-[17px] lg:text-[18px] leading-[150%] text-green-900">
               Comprehensive candidate screening and professional vetting
               solutions to ensure you hire the most qualified and vetted
               healthcare professionals for your organization. We conduct
               thorough background checks, credential verification, and skills
               assessments.
             </p>
-            <button className="absolute top-[290px] left-[60px] w-[220px] h-[48px] rounded-tl-[14px] rounded-tr-[14px] rounded-bl-[14px] py-[12px] px-[40px] inline-flex items-center justify-center gap-[20px] bg-green-800 text-white text-[16px] font-semibold">
+            <button className="relative lg:absolute mt-6 lg:mt-0 lg:top-[290px] lg:left-[60px] w-[220px] h-[48px] rounded-tl-[14px] rounded-tr-[14px] rounded-bl-[14px] py-[12px] px-[40px] inline-flex items-center justify-center gap-[20px] bg-green-800 text-white text-[16px] font-semibold">
               <img
                 src={job}
                 alt="job"
@@ -43,29 +152,32 @@ const Recruiter = () => {
               Get Started
             </button>
           </div>
-          <div className="absolute left-[670px] top-2 w-[626px] h-[411px]">
+          <div className="relative lg:absolute w-full lg:w-[626px] h-[220px] md:h-[320px] lg:h-[411px] lg:left-[670px] lg:top-2 mb-6 lg:mb-0 order-1 lg:order-none">
             <img
               src={r1}
               alt="recruiter image"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover rounded-xl lg:rounded-none"
             />
           </div>
         </div>
       </div>
-      <div className="w-[1440px] h-[500px] bg-white py-10 mt-6">
+
+      {/* Onboarding & Retention Support */}
+      <div className="w-full max-w-full lg:max-w-[1440px] lg:h-[500px] bg-white py-10 mt-6">
         <h3
-          className="max-w-[800px] mx-auto mt-8 text-[40px] font-bold text-amber-700 text-center"
+          className="max-w-[800px] mx-auto mt-8 text-[26px] md:text-[34px] lg:text-[40px] font-bold text-amber-700 text-center px-4"
           style={{
-            fontFamily: "'Caudex', cursive",
+            fontFamily: "'Caudex'",
             fontWeight: 700,
-            lineHeight: "100%",
+            lineHeight: "120%",
           }}
         >
           Onboarding & Retention Support
         </h3>
-        <div className="max-w-[1350px] mx-auto mt-14 rounded-[40px] overflow-hidden">
-          <div className="grid grid-cols-3 gap-4">
-            <div className="rounded-[40px] overflow-hidden relative h-[286px] w-[400px]">
+        <div className="max-w-[1350px] mx-auto mt-10 lg:mt-14 rounded-[40px] overflow-hidden px-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+            {/* Card 1 */}
+            <div className="rounded-[40px] overflow-hidden relative h-[286px] w-full max-w-[400px]">
               <img
                 src={r4}
                 alt="Employee Onboarding"
@@ -78,17 +190,18 @@ const Recruiter = () => {
                     "linear-gradient(184.15deg, rgba(0, 0, 0, 0) 45.11%, rgba(0, 0, 0, 0.6) 64.99%, #000000 96.62%)",
                 }}
               >
-                <h4 className="text-white text-center text-[18px] w-[354px] h-[27px] font-semibold">
+                <h4 className="text-white text-center text-[18px] w-full font-semibold">
                   Employee Onboarding
                 </h4>
-                <ul className="text-slate-300 text-[16px] w-[354px] h-[72px] text-center leading-[1.5] font-bold list-disc list-inside">
+                <ul className="text-slate-300 text-[14px] lg:text-[16px] w-full text-center leading-[1.5] font-bold list-disc list-inside">
                   <li>System & Access Setup Support</li>
                   <li>Documentation & Joining Formalities</li>
                   <li>Orientation & Company Policy Briefing</li>
                 </ul>
               </div>
             </div>
-            <div className="rounded-[40px] overflow-hidden relative h-[286px] w-[400px]">
+            {/* Card 2 */}
+            <div className="rounded-[40px] overflow-hidden relative h-[286px] w-full max-w-[400px]">
               <img
                 src={r2}
                 alt="Training & Development"
@@ -101,18 +214,18 @@ const Recruiter = () => {
                     "linear-gradient(184.15deg, rgba(0, 0, 0, 0) 45.11%, rgba(0, 0, 0, 0.6) 64.99%, #000000 96.62%)",
                 }}
               >
-                <h4 className="text-white text-center text-[18px] w-[354px] h-[27px] font-semibold">
+                <h4 className="text-white text-center text-[18px] w-full font-semibold">
                   Training & Development
                 </h4>
-                <ul className="text-slate-300 text-[16px] w-[354px] h-[72px] text-center leading-[1.5] font-bold list-disc list-inside">
-                  {" "}
+                <ul className="text-slate-300 text-[14px] lg:text-[16px] w-full text-center leading-[1.5] font-bold list-disc list-inside">
                   <li>Skill Enhancement & Upskilling</li>
                   <li>Role-Specific Training Programs</li>
                   <li>Performance Monitoring & Feedback</li>
                 </ul>
               </div>
             </div>
-            <div className="rounded-[40px] overflow-hidden relative h-[286px] w-[400px]">
+            {/* Card 3 */}
+            <div className="rounded-[40px] overflow-hidden relative h-[286px] w-full max-w-[400px] md:col-span-2 lg:col-span-1">
               <img
                 src={r3}
                 alt="Retention & Engagement"
@@ -125,10 +238,10 @@ const Recruiter = () => {
                     "linear-gradient(184.15deg, rgba(0, 0, 0, 0) 45.11%, rgba(0, 0, 0, 0.6) 64.99%, #000000 96.62%)",
                 }}
               >
-                <h4 className="text-white text-center text-[18px] w-[354px] h-[27px] font-semibold">
+                <h4 className="text-white text-center text-[18px] w-full font-semibold">
                   Retention & Engagement
                 </h4>
-                <ul className="text-slate-300 text-[16px] w-[354px] h-[72px] text-center leading-[1.5] font-bold list-disc list-inside">
+                <ul className="text-slate-300 text-[14px] lg:text-[16px] w-full text-center leading-[1.5] font-bold list-disc list-inside">
                   <li>Employee Engagement Initiatives</li>
                   <li>Attrition Analysis & Retention Strategy</li>
                   <li>Ongoing HR Support & Issue Resolution</li>
@@ -138,6 +251,322 @@ const Recruiter = () => {
           </div>
         </div>
       </div>
+
+      {/* Why Employers Trust Our Payroll Services */}
+      <div
+        className="w-full max-w-full lg:max-w-[1500px] h-auto lg:h-[760px] rounded-[30px] lg:rounded-[100px] overflow-hidden mx-auto relative mt-16 py-12 px-4"
+        style={{ background: "#69D29A80" }}
+      >
+        <img
+          src={r5}
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover opacity-70"
+        />
+        <div className="absolute inset-0 bg-[#69D29A80]" />
+
+        <div className="relative z-10">
+          <p
+            className="text-center text-[24px] md:text-[30px] lg:text-[35px] font-bold text-green-950 px-2"
+            style={{ fontFamily: "'Caudex'" }}
+          >
+            Why Employers Trust Our Payroll Services
+          </p>
+
+          {/* Desktop Absolute Grid Map - Displays only on Desktop/1440px+ widths */}
+          <div className="relative xl:block hidden w-full h-[560px] mt-10">
+            {payrollCards.map((card, index) => {
+              const positions = [
+                "left-[120px] top-[60px]",
+                "left-[420px] top-[60px]",
+                "left-[720px] top-[60px]",
+                "left-[1020px] top-[60px]",
+                "left-[200px] top-[330px]",
+                "left-[500px] top-[330px]",
+                "left-[800px] top-[330px]",
+                "left-[1080px] top-[330px]",
+              ];
+              const isActive = selectedIcon === index;
+              return (
+                <div
+                  key={index}
+                  onMouseEnter={() => setSelectedIcon(index)}
+                  onMouseLeave={() => setSelectedIcon(undefined)}
+                  className={`absolute cursor-pointer transition-all duration-500 ease-out ${positions[index]}`}
+                >
+                  <div
+                    className={`flex flex-col items-center text-center rounded-tl-[40px] rounded-tr-[40px] rounded-bl-[40px] border bg-green-50 border-green-200 transition-all duration-500 ease-out ${
+                      isActive
+                        ? "w-[250px] h-[260px] bg-[#F7FCF8] border-[#B9F8CF] px-4 pt-4 shadow-lg"
+                        : "w-[132px] h-[125px] items-center justify-center"
+                    }`}
+                  >
+                    <div className="w-[65px] h-[65px] rounded-[14px] border border-[#B9F8CF] bg-[#DCFCE7] flex items-center justify-center">
+                      <img
+                        src={card.icon}
+                        alt={card.title}
+                        className={`object-contain ${isActive ? "w-6 h-6" : "w-8 h-8"}`}
+                      />
+                    </div>
+                    {isActive && (
+                      <>
+                        <h3 className="mt-6 text-[18px] font-bold text-[#0A8A3D]">
+                          {card.title}
+                        </h3>
+                        <p className="mt-4 text-[16px] italic text-slate-500 leading-relaxed">
+                          {card.description}
+                        </p>
+                      </>
+                    )}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Mobile, Tablet & 1024px Laptop View LayoutFallback */}
+          <div className="xl:hidden grid grid-cols-2 md:grid-cols-3 gap-4 mt-8 relative z-20 max-w-[1000px] mx-auto">
+            {payrollCards.map((card, index) => (
+              <div
+                key={index}
+                onClick={() =>
+                  setSelectedIcon(selectedIcon === index ? undefined : index)
+                }
+                className="flex flex-col items-center text-center p-4 rounded-2xl bg-green-50/90 border border-green-200 shadow-sm transition-all"
+              >
+                <div className="w-[50px] h-[50px] rounded-xl border border-[#B9F8CF] bg-[#DCFCE7] flex items-center justify-center mb-3">
+                  <img
+                    src={card.icon}
+                    alt={card.title}
+                    className="w-6 h-6 object-contain"
+                  />
+                </div>
+                <h4 className="text-[14px] md:text-[15px] font-bold text-[#0A8A3D] leading-tight">
+                  {card.title}
+                </h4>
+                <p className="mt-2 text-[12px] text-slate-600 hidden md:block">
+                  {card.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+    {/* Our Labour Hire Solutions */}
+      <div className="w-full bg-white py-16">
+        <div className="max-w-[1200px] mx-auto text-center px-4">
+          <h2
+            className="text-[26px] md:text-[32px] lg:text-[35px] font-bold text-green-900 mb-4"
+            style={{
+              fontFamily: "'Caudex'",
+              fontWeight: 700,
+              lineHeight: "120%",
+            }}
+          >
+            Our Labour Hire Solutions
+          </h2>
+          <p
+            className="text-[15px] md:text-[18px] lg:text-[20px] font-medium text-green-700 max-w-[600px] mx-auto mb-10"
+            style={{
+              fontFamily: "'Poppins'",
+              fontWeight: 500,
+              lineHeight: "140%",
+            }}
+          >
+            Flexible, compliant workforce solutions tailored to your business needs
+          </p>
+
+          {/* Fully responsive layout grid that elegantly drops absolute positions on 1024px screens */}
+          <div className="relative w-full flex flex-col md:grid md:grid-cols-1 lg:grid-cols-3 xl:block gap-6 items-center justify-center">
+            {/* Box 1 */}
+            <div className="w-full max-w-[310px] h-auto min-h-[210px] xl:absolute xl:top-[100px] xl:left-[10px] rounded-tl-[40px] rounded-tr-[40px] rounded-bl-[40px] p-6 bg-green-100 text-left shadow-sm">
+              <p className="font-extrabold text-[14px] text-green-800">
+                Temp-to-Perm Options
+              </p>
+              <p className="font-[Poppins] font-normal text-[14px] mt-2 text-green-600">
+                Trial workers before making permanent hiring decisions.
+              </p>
+              <ul className="font-medium text-[12px] text-green-900 mt-2 list-disc list-inside space-y-1">
+                <li>Risk-free workforce evaluation</li>
+                <li>Reduced hiring costs</li>
+                <li>Smooth transition to permanent roles</li>
+              </ul>
+            </div>
+
+            {/* Middle Graphic Asset */}
+            <div className="w-full max-w-[450px] mx-auto md:col-span-2 lg:col-span-1 xl:absolute xl:left-1/2 xl:-translate-x-1/2 xl:top-0">
+              <img
+                src={h1}
+                alt="h1"
+                className="w-full h-auto object-contain mx-auto"
+              />
+            </div>
+
+            {/* Box 2 */}
+            <div className="w-full max-w-[310px] h-auto min-h-[210px] xl:absolute xl:top-[10px] xl:right-[10px] rounded-tl-[40px] rounded-tr-[40px] rounded-br-[40px] p-6 bg-green-100 text-left shadow-sm">
+              <p className="font-extrabold text-[14px] text-green-800">
+                Industry-Specific Labour
+              </p>
+              <p className="font-[Poppins] font-normal text-[14px] mt-2 text-green-600">
+                Pre-screened workers matched to your industry requirements.
+              </p>
+              <ul className="font-medium text-[12px] text-green-900 mt-2 list-disc list-inside space-y-1">
+                <li>Construction, hospitality, logistics</li>
+                <li>Manufacturing & warehousing</li>
+                <li>Skilled & semi-skilled roles</li>
+              </ul>
+            </div>
+
+            {/* Box 3 */}
+            <div className="w-full max-w-[310px] h-auto min-h-[210px] md:col-span-1 lg:col-span-1 xl:absolute xl:top-[240px] md:right-[-50px] xl:right-[10px] rounded-tl-[40px] rounded-tr-[40px] rounded-br-[40px] p-6 bg-green-100 text-left shadow-sm mx-auto">
+              <p className="font-extrabold text-[14px] text-green-800">
+                Screening & Readiness
+              </p>
+              <p className="font-[Poppins] font-normal text-[14px] mt-2 text-green-600">
+                Every worker is vetted and job-ready before placement.
+              </p>
+              <ul className="font-medium text-[12px] text-green-900 mt-2 list-disc list-inside space-y-1">
+                <li>Skill & experience checks</li>
+                <li>Right-to-work verification</li>
+                <li>Induction & safety briefing</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="hidden xl:block h-[450px]" />
+        </div>
+      </div>
+
+      {/* Our Services Section */}
+      <div className="w-full xl:w-[1440px] h-auto lg:h-[625px] bg-white py-10 lg:py-0">
+        <div className="w-full xl:w-[1312px] h-auto lg:h-[384px] py-10 lg:pt-[60px] rounded-2xl lg:rounded-none lg:rounded-tr-[70px] lg:rounded-br-[70px] bg-green-100 px-4 md:px-8 lg:px-0">
+          <p
+            className="text-center text-[26px] md:text-[32px] lg:text-[35px] font-bold text-green-900 xl:ml-[522px] xl:text-left"
+            style={{
+              fontFamily: "'Caudex'",
+              fontWeight: 700,
+              lineHeight: "100%",
+            }}
+          >
+            Our Services
+          </p>
+          <p
+            className="w-full xl:w-[682px] font-[Poppins] font-medium text-[15px] md:text-[18px] lg:text-[20px] xl:ml-[365px] mt-3 text-green-600 text-center xl:text-start"
+            style={{
+              lineHeight: "140%",
+            }}
+          >
+            End-to-end recruitment solutions that deliver the right talent,
+            faster
+          </p>
+
+          <div className="mt-10 lg:mt-20 flex flex-col md:flex-row justify-center items-center gap-6 lg:gap-[60px] px-2 md:px-4">
+            {/* Service Box 1 */}
+            <div className="relative w-full max-w-[450px] min-h-[300px] p-6 rounded-[40px] lg:rounded-[50px] bg-white shadow-[0px_35px_60px_-15px_rgba(0,88,41,0.25)] flex flex-col items-center justify-center">
+              <div className="hidden lg:block absolute -inset-2 w-10 h-10 ml-[135px] lg:ml-[210px] mt-14 lg:mt-16 bg-green-600/90 blur-lg rounded-full"></div>{" "}
+              <img
+                src={p1}
+                className="w-12 h-12 object-contain mb-4"
+                alt="icon"
+              />
+              <p className="font-[Poppins] font-semibold text-[17px] md:text-[19px] lg:text-[20px] text-green-600 text-center px-2">
+                Talent Sourcing & Screening
+              </p>
+              <ul className="w-full font-normal text-[14px] md:text-[16px] lg:text-[18px] text-slate-900 text-start mt-4 list-disc list-inside space-y-1">
+                <li>Job requirement analysis & sourcing</li>
+                <li>Resume shortlisting & initial screening</li>
+                <li>Skill, experience & cultural fit evaluation</li>
+              </ul>
+            </div>
+
+            {/* Service Box 2 */}
+            <div className="relative w-full max-w-[450px] min-h-[300px] p-6 rounded-[40px] lg:rounded-[50px] bg-white shadow-[0px_35px_60px_-15px_rgba(0,88,41,0.25)] flex flex-col items-center justify-center">
+              <div className="hidden lg:block absolute -inset-2 w-10 h-10 ml-[135px] sm:ml-[250px] lg:ml-[210px] mt-12 sm:mt-16 lg:mt-16 bg-green-600/90 blur-lg rounded-full"></div>
+              <img
+                src={p2}
+                className="w-10 h-10 object-contain mb-4"
+                alt="icon"
+              />
+              <p className="font-[Poppins] font-semibold text-[17px] md:text-[19px] lg:text-[20px] text-green-600 text-center px-2">
+                Hiring, Onboarding & Support
+              </p>
+              <ul className="w-full font-normal text-[14px] md:text-[16px] lg:text-[18px] text-slate-900 text-start mt-4 list-disc list-inside space-y-1">
+                <li>Interview coordination & offer management</li>
+                <li>Background verification & documentation</li>
+                <li>Seamless onboarding & post-hire support</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Permanent & Executive Recruitment Section with Reveal-on-Hover Feature */}
+      <div className="w-full max-w-[1440px] mx-auto bg-white py-10 mt-16 md:mt-24 lg:mt-32 mb-12 px-4">
+        <h3
+          className="max-w-[892px] mx-auto text-[24px] md:text-[30px] lg:text-[35px] font-bold text-green-900 text-center px-2"
+          style={{
+            fontFamily: "'Caudex'",
+            fontWeight: 700,
+            lineHeight: "130%",
+          }}
+        >
+          Why Choose Us for Permanent & Executive Recruitment?
+        </h3>
+
+        <div className="mt-10 lg:mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {executiveCards.map((card) => (
+            <div
+              key={card.id}
+              className="group relative w-full h-[270px] md:h-[300px] lg:h-[320px] rounded-[30px] overflow-hidden cursor-pointer transition-all duration-500 shadow-md"
+            >
+              {/* Default Image Display Layer */}
+              <div
+                className="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-105"
+                style={{
+                  backgroundImage: `url(${card.bgImage})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+              />
+
+              {/* Linear Gradient with Text Overlay for Default View */}
+              <div
+                className="absolute  transform -translate-x-1/2 bottom-0 flex flex-col justify-end px-5 pb-3 gap-[6px] transition-opacity duration-500 opacity-100 group-hover:opacity-0 rounded-b-[30px]"
+                style={{
+                  width: 300,
+                  height: 93,
+                  background:
+                    "linear-gradient(360deg, #006124 0%, rgba(2, 124, 47, 0.66) 43.72%, rgba(0, 151, 56, 0) 83.12%)",
+                  opacity: 1,
+                  transform: "rotate(0deg)",
+                  paddingBottom: 12,
+                }}
+              >
+                <p className="text-white text-center lg:text-center font-bold text-[14px] md:text-[16px] leading-snug tracking-wide">
+                  {card.title}
+                </p>
+              </div>
+
+              {/* Clean Dark-Green Solid Info Screen Layer Revealed on Hover */}
+              <div className="absolute inset-0 bg-[#056835] p-5 flex flex-col items-center justify-center text-center transition-all duration-500 ease-in-out opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto rounded-[30px]">
+                <img
+                  src={card.icon}
+                  alt={`${card.title} icon`}
+                  className="w-[41.67px] h-[41.67px] mb-3 object-contain"
+                />
+                <h4 className="text-white font-bold text-[15px] md:text-[15px] leading-tight mb-2">
+                  {card.title}
+                </h4>
+                <p className="text-green-100 font-[Poppins] text-[13px] md:text-[13px] leading-relaxed max-w-[240px]">
+                  {card.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <GetInTouch />
     </section>
   );
 };

@@ -17,9 +17,9 @@ const GetInTouch = () => {
           <h2 className="mb-14 text-3xl sm:text-4xl md:text-5xl font-normal text-center text-green-100 font-serif">
             Get In Touch
           </h2>
-          <div className="w-full max-w-[1138px] grid gap-6 md:grid-cols-3 lg:ml-10">
+          <div className="w-full max-w-[1138px] mx-auto grid gap-6 md:grid-cols-3">
             <div className="bg-white/80 backdrop-blur-md rounded-[30px] relative w-full min-h-[60px] lg:w-[300px] lg:min-h-[220px] p-8 shadow-xl text-center">
-              <div className="absolute -top-6 md:left-[10px] lg:left-[20px] -translate-x-1/2 h-[51px] w-[51px] bg-green-200 rounded-[18px] rounded-bl-[18px] p-[8px] flex items-center justify-center">
+              <div className="absolute -top-6 left-1/2 -translate-x-1/2 h-[51px] w-[51px] bg-green-200 rounded-[18px] rounded-bl-[18px] p-[8px] flex items-center justify-center">
                 <a href="mailto:info@jobsnvisa.com.au">
                   <img src={emailIcon} alt="email" />
                 </a>
@@ -29,7 +29,7 @@ const GetInTouch = () => {
               <p className="text-emerald-900 mt-2">Response within 24 hours</p>
             </div>
             <div className="bg-white/80 backdrop-blur-md rounded-[30px] relative w-full min-h-[60px] lg:w-[300px] lg:min-h-[220px] p-8 shadow-xl text-center">
-              <a href="tel:+61387643335" className="absolute -top-6 md:left-[10px] lg:left-[20px] -translate-x-1/2 h-[51px] w-[51px] bg-green-200 rounded-[18px] rounded-bl-[18px] p-[8px] flex items-center justify-center">
+              <a href="tel:+61387643335" className="absolute -top-6 left-1/2 -translate-x-1/2 h-[51px] w-[51px] bg-green-200 rounded-[18px] rounded-bl-[18px] p-[8px] flex items-center justify-center">
                 <img src={phoneIcon} alt="phone" />
               </a>
               <h3 className="text-xl text-orange-600 mb-3 mt-6">Phone</h3>
@@ -40,7 +40,7 @@ const GetInTouch = () => {
               </p>
             </div>
             <div className="bg-white/80 backdrop-blur-md rounded-[30px] relative w-full min-h-[100px] lg:w-[300px] lg:min-h-[220px] p-8 shadow-xl text-center">
-              <a href="https://www.google.com/maps/search/?api=1&query=Australia" target="_blank" rel="noreferrer" className="absolute -top-6 md:left-[10px] lg:left-[20px] -translate-x-1/2 h-[51px] w-[51px] bg-green-200 rounded-[18px] rounded-bl-[18px] p-[8px] flex items-center justify-center">
+              <a href="https://www.google.com/maps/search/?api=1&query=Australia" target="_blank" rel="noreferrer" className="absolute -top-6 left-1/2 -translate-x-1/2 h-[51px] w-[51px] bg-green-200 rounded-[18px] rounded-bl-[18px] p-[8px] flex items-center justify-center">
                 <img src={locationIcon} alt="location" />
               </a>
               <h3 className="text-xl text-orange-600 mb-3 mt-6">Locations</h3>
