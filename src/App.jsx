@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Footer from './Components/Footer'
 import Recruiter from './pages/Recruiter'
+import Employee from './pages/Employee'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/recruiters" element={<Recruiter />} />
+        <Route path="/employers" element={<Employee/>} />
       </Routes>
       <Footer/>
     </Router>
