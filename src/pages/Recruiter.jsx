@@ -533,7 +533,7 @@ const Recruiter = () => {
               <div
                 className="absolute  transform -translate-x-1/2 bottom-0 flex flex-col justify-end px-5 pb-3 gap-[6px] transition-opacity duration-500 opacity-100 group-hover:opacity-0 rounded-b-[30px]"
                 style={{
-                  width: 300,
+                  width:"100%",
                   height: 93,
                   background:
                     "linear-gradient(360deg, #006124 0%, rgba(2, 124, 47, 0.66) 43.72%, rgba(0, 151, 56, 0) 83.12%)",
