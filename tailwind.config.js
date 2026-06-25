@@ -5,7 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        caudex: ["Caudex", "serif"],
+        caveat: ["Caveat", "cursive"],
+        poppins: ["Poppins", "sans-serif"],
+        jost: ["Jost", "sans-serif"],
+        dangrek: ["Dangrek", "cursive"],
+      },
+    },
   },
   plugins: [],
 };

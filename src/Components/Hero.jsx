@@ -34,7 +34,7 @@ const Hero = () => {
         <div className="md:mt-2 mt-4 flex items-center gap-6 md:absolute md:top-[540px] md:right-[-60px] md:-translate-x-1/2">
           <a
             href="#"
-            className="bg-green-100 text-green-800 font-['Poppins'] font-semibold text-[15px] leading-[100%] tracking-[0%] py-5 px-6 rounded-tr-[14px] rounded-tl-[14px] w-[160px] md:w-[200px] h-[48px] transition duration-300 text-center"
+            className="bg-green-100 text-green-800 font-['Poppins'] font-semibold text-[15px] leading-[100%] tracking-[0%] py-5 px-6 rounded-tr-[14px] rounded-tl-[14px] w-[180px] md:w-[200px] h-[48px] transition duration-300 text-center"
             style={{ fontFamily: "'Poppins', sans-serif" }}
           >
             Find Your Dream Job

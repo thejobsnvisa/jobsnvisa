@@ -108,7 +108,7 @@ const Employee = () => {
         </h1>
 
         {/* Subtitle */}
-        <p className="mt-4 max-w-[700px] font-[Poppins] text-[16px] md:text-[20px] italic font-semibold text-green-600 px-2">
+        <p className="mt-4 max-w-[800px] font-[Poppins] text-[16px] md:text-[20px] italic font-semibold text-green-600 px-2">
           Find the right job, visa guidance and growth opportunities in
           Australia
         </p>
@@ -116,10 +116,10 @@ const Employee = () => {
         {/* Hero Card Banner */}
         <div className="w-full max-w-[1300px] min-h-auto lg:min-h-[420px] mt-10 rounded-2xl lg:rounded-tl-[70px] lg:rounded-tr-[70px] lg:rounded-br-[70px] bg-green-100 mx-auto relative overflow-hidden flex flex-col lg:block p-6 md:p-10 lg:p-0">
           <div className="relative lg:absolute lg:top-[60px] lg:left-[60px] flex flex-col items-center lg:items-start text-center lg:text-left z-10 order-2 lg:order-none">
-            <h1 className="w-full lg:w-[366px] font-[Jost] font-bold italic text-[26px] md:text-[32px] lg:text-[40px] leading-[120%] tracking-[0%] text-slate-600">
-              Flexible Labour Hire <br />& Job Opportunities
-            </h1>
-            <p className="max-w-[450px] mt-4 lg:mt-10 lg:ml-2 text-justify font-[Poppins] text-[15px] md:text-[17px] lg:text-[18px] leading-[150%] text-green-900">
+            <h3 className="max-w-[455px] font-jost text-[26px] md:text-[32px] lg:text-[40px] font-semibold italic leading-[120%] text-[#475569]">
+              Flexible Labour Hire <br />&amp; Job Opportunities
+            </h3>
+            <p className="max-w-[450px] mt-4 lg:mt-5 lg:ml-2 text-justify font-[Poppins] text-[15px] md:text-[17px] lg:text-[18px] leading-[150%] text-green-900">
               Access casual, contract, and short-term job opportunities with
               compliant Australian employers. JobsNVisa connects you to flexible
               roles that match your availability, experience, and career goals,
@@ -422,7 +422,7 @@ const Employee = () => {
             Pre-Employment Support & Registration
           </p>
           <p
-            className="w-full xl:w-[682px] font-[Poppins] font-medium text-[15px] md:text-[18px] lg:text-[20px] xl:ml-[405px] mt-3 text-green-600 text-center xl:text-start"
+            className="w-full xl:w-[682px] font-[Poppins] font-medium text-[15px] md:text-[18px] lg:text-[20px] xl:ml-[329px] mt-5 text-green-600 text-center xl:text-start"
             style={{
               lineHeight: "140%",
             }}
@@ -487,7 +487,7 @@ const Employee = () => {
           {executiveCards.map((card) => (
             <div
               key={card.id}
-              className="group relative w-full h-[270px] md:h-[300px] lg:h-[320px] rounded-[30px] overflow-hidden cursor-pointer transition-all duration-500 shadow-md"
+              className="group relative w-full h-[320px] md:h-[380px] lg:h-[460px] rounded-[30px] overflow-hidden cursor-pointer transition-all duration-500 shadow-md"
             >
               {/* Default Image Display Layer */}
               <div
@@ -504,7 +504,7 @@ const Employee = () => {
                 className="absolute   transform -translate-x-1/2 bottom-0 flex flex-col justify-end px-5 pb-3 gap-[6px] transition-opacity duration-500 opacity-100 group-hover:opacity-0 rounded-b-[30px]"
                 style={{
                   width: "100%",
-                  height: 93,
+                  height: 193,
                   background:
                     "linear-gradient(360deg, #006124 0%, rgba(2, 124, 47, 0.66) 43.72%, rgba(0, 151, 56, 0) 83.12%)",
                   opacity: 1,
@@ -512,7 +512,7 @@ const Employee = () => {
                   paddingBottom: 12,
                 }}
               >
-                <p className="text-white text-center lg:text-center font-bold text-[14px] md:text-[16px] leading-snug tracking-wide">
+               <p className="text-white text-center mb-4  lg:text-center font-bold text-[18px] md:text-[17px] leading-snug tracking-wide">
                   {card.title}
                 </p>
               </div>

@@ -126,17 +126,19 @@ const Recruiter = () => {
         </h1>
 
         {/* Subtitle */}
-        <p className="mt-4 max-w-[700px] font-[Poppins] text-[16px] md:text-[20px] italic font-semibold text-green-600 px-2">
+        <p className="mt-4 max-w-[739px] h-[35px] font-[Poppins] text-[16px] md:text-[20px] italic font-semibold text-green-600 px-2">
           Find the right skilled employees and job-ready talent with confidence
         </p>
 
         {/* Hero Card Banner */}
         <div className="w-full max-w-[1300px] min-h-auto lg:min-h-[420px] mt-10 rounded-2xl lg:rounded-tl-[70px] lg:rounded-tr-[70px] lg:rounded-br-[70px] bg-green-100 mx-auto relative overflow-hidden flex flex-col lg:block p-6 md:p-10 lg:p-0">
           <div className="relative lg:absolute lg:top-[60px] lg:left-[60px] flex flex-col items-center lg:items-start text-center lg:text-left z-10 order-2 lg:order-none">
-            <h1 className="w-full lg:w-[366px] font-[Jost] font-bold italic text-[26px] md:text-[32px] lg:text-[40px] leading-[120%] tracking-[0%] text-slate-600">
-              Candidate Screening <br />& Vetting Service
-            </h1>
-            <p className="max-w-[450px] mt-4 lg:mt-10 lg:ml-2 text-justify font-[Poppins] text-[15px] md:text-[17px] lg:text-[18px] leading-[150%] text-green-900">
+            <h3 className="max-w-[455px] font-jost text-[26px] md:text-[32px] lg:text-[40px] font-semibold italic leading-[120%] text-[#475569]">
+  Candidate Screening
+  <br />
+  &amp; Vetting Service
+</h3>
+            <p className="max-w-[450px] mt-2 lg:mt-5 lg:ml-2 text-justify font-[Poppins] text-[15px] md:text-[17px] lg:text-[18px] leading-[150%] text-green-900">
               Comprehensive candidate screening and professional vetting
               solutions to ensure you hire the most qualified and vetted
               healthcare professionals for your organization. We conduct
@@ -441,7 +443,7 @@ const Recruiter = () => {
       <div className="w-full xl:w-[1440px] h-auto lg:h-[625px] bg-white py-10 lg:py-0">
         <div className="w-full xl:w-[1312px] h-auto lg:h-[384px] py-10 lg:pt-[60px] rounded-2xl lg:rounded-none lg:rounded-tr-[70px] lg:rounded-br-[70px] bg-green-100 px-4 md:px-8 lg:px-0">
           <p
-            className="text-center text-[26px] md:text-[32px] lg:text-[35px] font-bold text-green-900 xl:ml-[522px] xl:text-left"
+            className="text-center text-[26px] md:text-[32px] lg:text-[35px] font-bold text-green-900"
             style={{
               fontFamily: "'Caudex'",
               fontWeight: 700,
@@ -451,7 +453,7 @@ const Recruiter = () => {
             Our Services
           </p>
           <p
-            className="w-full xl:w-[682px] font-[Poppins] font-medium text-[15px] md:text-[18px] lg:text-[20px] xl:ml-[365px] mt-3 text-green-600 text-center xl:text-start"
+            className="w-full xl:w-[682px] font-[Poppins] font-medium text-[15px] md:text-[18px] lg:text-[20px] xl:ml-[325px] mt-4 text-green-600 text-center "
             style={{
               lineHeight: "140%",
             }}
@@ -503,7 +505,7 @@ const Recruiter = () => {
       {/* Permanent & Executive Recruitment Section with Reveal-on-Hover Feature */}
       <div className="w-full max-w-[1440px] mx-auto bg-white py-10 mt-16 md:mt-24 lg:mt-32 mb-12 px-4">
         <h3
-          className="max-w-[892px] mx-auto text-[24px] md:text-[30px] lg:text-[35px] font-bold text-green-900 text-center px-2"
+          className="max-w-[930px] mx-auto text-[24px] md:text-[30px] lg:text-[35px] font-bold text-green-900 text-center px-2"
           style={{
             fontFamily: "'Caudex'",
             fontWeight: 700,
@@ -515,9 +517,9 @@ const Recruiter = () => {
 
         <div className="mt-10 lg:mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {executiveCards.map((card) => (
-            <div
+              <div
               key={card.id}
-              className="group relative w-full h-[270px] md:h-[300px] lg:h-[320px] rounded-[30px] overflow-hidden cursor-pointer transition-all duration-500 shadow-md"
+              className="group relative w-full h-[320px] md:h-[380px] lg:h-[460px] rounded-[30px] overflow-hidden cursor-pointer transition-all duration-500 shadow-md"
             >
               {/* Default Image Display Layer */}
               <div
@@ -534,7 +536,7 @@ const Recruiter = () => {
                 className="absolute  transform -translate-x-1/2 bottom-0 flex flex-col justify-end px-5 pb-3 gap-[6px] transition-opacity duration-500 opacity-100 group-hover:opacity-0 rounded-b-[30px]"
                 style={{
                   width:"100%",
-                  height: 93,
+                  height: 193,
                   background:
                     "linear-gradient(360deg, #006124 0%, rgba(2, 124, 47, 0.66) 43.72%, rgba(0, 151, 56, 0) 83.12%)",
                   opacity: 1,
@@ -542,7 +544,7 @@ const Recruiter = () => {
                   paddingBottom: 12,
                 }}
               >
-                <p className="text-white text-center lg:text-center font-bold text-[14px] md:text-[16px] leading-snug tracking-wide">
+                <p className="text-white text-center mb-4  lg:text-center font-bold text-[18px] md:text-[17px] leading-snug tracking-wide">
                   {card.title}
                 </p>
               </div>
@@ -554,7 +556,7 @@ const Recruiter = () => {
                   alt={`${card.title} icon`}
                   className="w-[41.67px] h-[41.67px] mb-3 object-contain"
                 />
-                <h4 className="text-white font-bold text-[15px] md:text-[15px] leading-tight mb-2">
+                <h4 className="text-white font-bold text-[15px] md:text-[15px] leading-tight mb-6">
                   {card.title}
                 </h4>
                 <p className="text-green-100 font-[Poppins] text-[13px] md:text-[13px] leading-relaxed max-w-[240px]">
