@@ -15,7 +15,7 @@ const Navbar = () => {
 
   const serviceItems = [
     { name: "Recruiter Services", href: "/recruiters" },
-    { name: "Employer Services", href: "/employers" },
+    { name: "Employee Services", href: "/employee" },
   ];
 
   const [isServicesOpen, setIsServicesOpen] = useState(false);
