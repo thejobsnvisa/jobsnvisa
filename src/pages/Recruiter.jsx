@@ -121,12 +121,12 @@ const Recruiter = () => {
         </p>
 
         {/* Title */}
-        <h1 className="mt-4 font-serif text-[20px] md:text-[22px] font-bold text-green-900">
+        <h1 className="mt-6 font-caudex text-[20px] md:text-[22px] font-bold text-green-900">
           Recruiter Services
         </h1>
 
         {/* Subtitle */}
-        <p className="mt-4 max-w-[739px] h-[35px] font-[Poppins] text-[16px] md:text-[20px] italic font-semibold text-green-600 px-2">
+        <p className="mt-2   max-w-[739px] h-[35px] font-[Poppins] text-[16px] md:text-[20px] italic font-semibold text-green-600 px-2">
           Find the right skilled employees and job-ready talent with confidence
         </p>
 

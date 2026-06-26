@@ -103,12 +103,12 @@ const Employee = () => {
         </p>
 
         {/* Title */}
-        <h1 className="mt-4 font-serif text-[20px] md:text-[22px] font-bold text-green-900">
+        <h1 className="mt-6 font-caudex text-[20px] md:text-[22px] font-bold text-green-900">
           Employee Services
         </h1>
 
         {/* Subtitle */}
-        <p className="mt-4 max-w-[800px] font-[Poppins] text-[16px] md:text-[20px] italic font-semibold text-green-600 px-2">
+        <p className="mt-2 max-w-[800px] font-[Poppins] text-[16px] md:text-[20px] italic font-semibold text-green-600 px-2">
           Find the right job, visa guidance and growth opportunities in
           Australia
         </p>
