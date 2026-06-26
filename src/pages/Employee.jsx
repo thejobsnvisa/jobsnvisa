@@ -359,11 +359,11 @@ const Employee = () => {
           {/* Fully responsive layout grid that elegantly drops absolute positions on 1024px screens */}
           <div className="relative w-full flex flex-col md:grid md:grid-cols-1 lg:grid-cols-3 xl:block gap-6 items-center justify-center">
             {/* Box 1 */}
-            <div className="w-full max-w-[280px] h-auto min-h-[150px] xl:absolute xl:top-[100px] xl:left-[10px] rounded-tl-[40px] rounded-tr-[40px] rounded-bl-[40px] p-6 bg-green-100 text-left shadow-sm">
+            <div className="w-full max-w-[300px] h-auto min-h-[150px] xl:absolute xl:top-[100px] xl:left-[10px] rounded-tl-[40px] rounded-tr-[40px] rounded-bl-[40px] p-6 bg-green-100 text-left shadow-sm">
               <p className="font-extrabold text-[14px] text-green-800">
                 Casual & Contract Roles
               </p>
-              <ul className="font-medium text-[12px] text-green-900 mt-2 list-disc list-inside space-y-1">
+              <ul className="font-medium text-[13px] text-green-900 mt-2 list-disc list-inside space-y-1">
                 <li>Short-term and ongoing assignments</li>
                 <li>Flexible shifts</li>
                 <li>Immediate start roles</li>
@@ -380,11 +380,11 @@ const Employee = () => {
             </div>
 
             {/* Box 2 */}
-            <div className="w-full max-w-[280px] h-auto min-h-[150px] xl:absolute xl:top-[10px] xl:right-[10px] rounded-tl-[40px] rounded-tr-[40px] rounded-br-[40px] p-6 bg-green-100 text-left shadow-sm">
+            <div className="w-full max-w-[300px] h-auto min-h-[150px] xl:absolute xl:top-[10px] xl:right-[10px] rounded-tl-[40px] rounded-tr-[40px] rounded-br-[40px] p-6 bg-green-100 text-left shadow-sm">
               <p className="font-extrabold text-[14px] text-green-800">
                 Job-Ready Placement
               </p>
-              <ul className="font-medium text-[12px] text-green-900 mt-2 list-disc list-inside space-y-1">
+              <ul className="font-medium text-[13px] text-green-900 mt-2 list-disc list-inside space-y-1">
                 <li>Skills and availability matching</li>
                 <li>Right-to-work verification</li>
                 <li>Pre-placement briefing</li>
@@ -392,11 +392,11 @@ const Employee = () => {
             </div>
 
             {/* Box 3 */}
-            <div className="w-full max-w-[280px] h-auto min-h-[150px] md:col-span-1 lg:col-span-1 xl:absolute xl:top-[240px] md:right-[-50px] xl:right-[10px] rounded-tl-[40px] rounded-tr-[40px] rounded-br-[40px] p-6 bg-green-100 text-left shadow-sm mx-auto">
+            <div className="w-full max-w-[300px] h-auto min-h-[150px] md:col-span-1 lg:col-span-1 xl:absolute xl:top-[240px] md:right-[-50px] xl:right-[10px] rounded-tl-[40px] rounded-tr-[40px] rounded-br-[40px] p-6 bg-green-100 text-left shadow-sm mx-auto">
               <p className="font-extrabold text-[14px] text-green-800">
                 Temp-to-Perm Pathways
               </p>
-              <ul className="font-medium text-[12px] text-green-900 mt-2 list-disc list-inside space-y-1">
+              <ul className="font-medium text-[13px] text-green-900 mt-2 list-disc list-inside space-y-1">
                 <li>Performance-based permanency</li>
                 <li>Employer-sponsored transitions</li>
                 <li>Reduced employment risk</li>

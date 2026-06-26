@@ -388,7 +388,7 @@ const Recruiter = () => {
               <p className="font-[Poppins] font-normal text-[14px] mt-2 text-green-600">
                 Trial workers before making permanent hiring decisions.
               </p>
-              <ul className="font-medium text-[12px] text-green-900 mt-2 list-disc list-inside space-y-1">
+              <ul className="font-medium text-[13px] text-green-900 mt-2 list-disc list-inside space-y-1">
                 <li>Risk-free workforce evaluation</li>
                 <li>Reduced hiring costs</li>
                 <li>Smooth transition to permanent roles</li>
@@ -412,7 +412,7 @@ const Recruiter = () => {
               <p className="font-[Poppins] font-normal text-[14px] mt-2 text-green-600">
                 Pre-screened workers matched to your industry requirements.
               </p>
-              <ul className="font-medium text-[12px] text-green-900 mt-2 list-disc list-inside space-y-1">
+              <ul className="font-medium text-[13px] text-green-900 mt-2 list-disc list-inside space-y-1">
                 <li>Construction, hospitality, logistics</li>
                 <li>Manufacturing & warehousing</li>
                 <li>Skilled & semi-skilled roles</li>
@@ -427,7 +427,7 @@ const Recruiter = () => {
               <p className="font-[Poppins] font-normal text-[14px] mt-2 text-green-600">
                 Every worker is vetted and job-ready before placement.
               </p>
-              <ul className="font-medium text-[12px] text-green-900 mt-2 list-disc list-inside space-y-1">
+              <ul className="font-medium text-[13px] text-green-900 mt-2 list-disc list-inside space-y-1">
                 <li>Skill & experience checks</li>
                 <li>Right-to-work verification</li>
                 <li>Induction & safety briefing</li>
