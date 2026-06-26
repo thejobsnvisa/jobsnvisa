@@ -138,7 +138,7 @@ const Recruiter = () => {
   <br />
   &amp; Vetting Service
 </h3>
-            <p className="max-w-[450px] mt-2 lg:mt-5 lg:ml-2 text-justify font-[Poppins] text-[15px] md:text-[17px] lg:text-[18px] leading-[150%] text-green-900">
+            <p className="max-w-[450px] mt-2 lg:mt-10 lg:ml-2 text-justify font-[Poppins] text-[15px] md:text-[15px] lg:text-[16px] leading-[150%] text-green-900">
               Comprehensive candidate screening and professional vetting
               solutions to ensure you hire the most qualified and vetted
               healthcare professionals for your organization. We conduct

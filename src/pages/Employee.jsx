@@ -119,7 +119,7 @@ const Employee = () => {
             <h3 className="max-w-[455px] font-jost text-[26px] md:text-[32px] lg:text-[40px] font-semibold italic leading-[120%] text-[#475569]">
               Flexible Labour Hire <br />&amp; Job Opportunities
             </h3>
-            <p className="max-w-[450px] mt-4 lg:mt-5 lg:ml-2 text-justify font-[Poppins] text-[15px] md:text-[17px] lg:text-[18px] leading-[150%] text-green-900">
+            <p className="max-w-[450px] mt-4 lg:mt-10 lg:ml-2 text-justify font-[Poppins] text-[15px] md:text-[15px] lg:text-[16px] leading-[150%] text-green-900">
               Access casual, contract, and short-term job opportunities with
               compliant Australian employers. JobsNVisa connects you to flexible
               roles that match your availability, experience, and career goals,
