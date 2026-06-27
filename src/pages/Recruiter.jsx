@@ -134,10 +134,10 @@ const Recruiter = () => {
         <div className="w-full max-w-[1300px] min-h-auto lg:min-h-[420px] mt-10 rounded-2xl lg:rounded-tl-[70px] lg:rounded-tr-[70px] lg:rounded-br-[70px] bg-green-100 mx-auto relative overflow-hidden flex flex-col lg:block p-6 md:p-10 lg:p-0">
           <div className="relative lg:absolute lg:top-[60px] lg:left-[60px] flex flex-col items-center lg:items-start text-center lg:text-left z-10 order-2 lg:order-none">
             <h3 className="max-w-[455px] font-jost text-[26px] md:text-[32px] lg:text-[40px] font-semibold italic leading-[120%] text-[#475569]">
-  Candidate Screening
-  <br />
-  &amp; Vetting Service
-</h3>
+              Candidate Screening
+              <br />
+              &amp; Vetting Service
+            </h3>
             <p className="max-w-[450px] mt-2 lg:mt-10 lg:ml-2 text-justify font-[Poppins] text-[15px] md:text-[15px] lg:text-[16px] leading-[150%] text-green-900">
               Comprehensive candidate screening and professional vetting
               solutions to ensure you hire the most qualified and vetted
@@ -296,11 +296,10 @@ const Recruiter = () => {
                   className={`absolute cursor-pointer transition-all duration-500 ease-out ${positions[index]}`}
                 >
                   <div
-                    className={`flex flex-col items-center text-center rounded-tl-[40px] rounded-tr-[40px] rounded-bl-[40px] border bg-green-50 border-green-200 transition-all duration-500 ease-out ${
-                      isActive
+                    className={`flex flex-col items-center text-center rounded-tl-[40px] rounded-tr-[40px] rounded-bl-[40px] border bg-green-50 border-green-200 transition-all duration-500 ease-out ${isActive
                         ? "w-[250px] h-[260px] bg-[#F7FCF8] border-[#B9F8CF] px-4 pt-4 shadow-lg"
                         : "w-[132px] h-[125px] items-center justify-center"
-                    }`}
+                      }`}
                   >
                     <div className="w-[65px] h-[65px] rounded-[14px] border border-[#B9F8CF] bg-[#DCFCE7] flex items-center justify-center">
                       <img
@@ -354,7 +353,7 @@ const Recruiter = () => {
         </div>
       </div>
 
-    {/* Our Labour Hire Solutions */}
+      {/* Our Labour Hire Solutions */}
       <div className="w-full bg-white py-16">
         <div className="max-w-[1200px] mx-auto text-center px-4">
           <h2
@@ -517,7 +516,7 @@ const Recruiter = () => {
 
         <div className="mt-10 lg:mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {executiveCards.map((card) => (
-              <div
+            <div
               key={card.id}
               className="group relative w-full h-[320px] md:h-[380px] lg:h-[460px] rounded-[30px] overflow-hidden cursor-pointer transition-all duration-500 shadow-md"
             >
@@ -535,7 +534,7 @@ const Recruiter = () => {
               <div
                 className="absolute  transform -translate-x-1/2 bottom-0 flex flex-col justify-end px-5 pb-3 gap-[6px] transition-opacity duration-500 opacity-100 group-hover:opacity-0 rounded-b-[30px]"
                 style={{
-                  width:"100%",
+                  width: "100%",
                   height: 193,
                   background:
                     "linear-gradient(360deg, #006124 0%, rgba(2, 124, 47, 0.66) 43.72%, rgba(0, 151, 56, 0) 83.12%)",

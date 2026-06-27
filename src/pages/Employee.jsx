@@ -117,7 +117,8 @@ const Employee = () => {
         <div className="w-full max-w-[1300px] min-h-auto lg:min-h-[420px] mt-10 rounded-2xl lg:rounded-tl-[70px] lg:rounded-tr-[70px] lg:rounded-br-[70px] bg-green-100 mx-auto relative overflow-hidden flex flex-col lg:block p-6 md:p-10 lg:p-0">
           <div className="relative lg:absolute lg:top-[60px] lg:left-[60px] flex flex-col items-center lg:items-start text-center lg:text-left z-10 order-2 lg:order-none">
             <h3 className="max-w-[455px] font-jost text-[26px] md:text-[32px] lg:text-[40px] font-semibold italic leading-[120%] text-[#475569]">
-              Flexible Labour Hire <br />&amp; Job Opportunities
+              Flexible Labour Hire <br />
+              &amp; Job Opportunities
             </h3>
             <p className="max-w-[450px] mt-4 lg:mt-10 lg:ml-2 text-justify font-[Poppins] text-[15px] md:text-[15px] lg:text-[16px] leading-[150%] text-green-900">
               Access casual, contract, and short-term job opportunities with
@@ -436,7 +437,7 @@ const Employee = () => {
               <div className="hidden lg:block absolute -inset-2 w-10 h-10 ml-[135px] lg:ml-[210px] mt-14 lg:mt-16 bg-green-600/90 blur-lg rounded-full"></div>{" "}
               <img
                 src={p3}
-                 className="w-[36.5px] h-[49px] object-contain mb-4"
+                className="w-[36.5px] h-[49px] object-contain mb-4"
                 alt="icon"
               />
               <p className="font-[Poppins] font-semibold text-[17px] md:text-[19px] lg:text-[20px] text-green-600 text-center px-2">
@@ -512,7 +513,7 @@ const Employee = () => {
                   paddingBottom: 12,
                 }}
               >
-               <p className="text-white text-center mb-4  lg:text-center font-bold text-[18px] md:text-[17px] leading-snug tracking-wide">
+                <p className="text-white text-center mb-4  lg:text-center font-bold text-[18px] md:text-[17px] leading-snug tracking-wide">
                   {card.title}
                 </p>
               </div>
