@@ -22,8 +22,7 @@ const Hero = () => {
           <br /> & Start your Journey
         </h1>
         <p
-          className="mt-4 md:absolute md:top-[340px] md:right-[-180px] md:w-[480px] md:-translate-x-1/2 text-center text-green-100 font-['Caveat'] text-[24px] leading-[100%] tracking-[0%]"
-          style={{ fontFamily: "'Caveat', cursive" }}
+          className="mt-2 md:absolute md:top-[340px] md:right-[-180px] md:w-[480px] md:-translate-x-1/2 text-center text-green-100 font-caveat text-[35px] leading-[100%] tracking-[0%]"
         >
           Connect with top employers across Australia's fastest-growing
           industries.
