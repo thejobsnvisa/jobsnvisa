@@ -1,5 +1,7 @@
 import { useState } from "react";
 import r1 from "../assets/recruiter.png";
+import w1 from "../assets/w1.png";
+import w2 from "../assets/Vector1.svg";
 import r4 from "../assets/r4.png";
 import r2 from "../assets/r2.png";
 import r3 from "../assets/r3.png";
@@ -115,21 +117,37 @@ const Recruiter = () => {
   return (
     <section className="max-w-[1420px] mx-auto px-4 pt-10 pb-12 overflow-x-hidden">
       <div className="flex flex-col items-center text-center mt-24 lg:mt-24">
-        {/* Breadcrumb */}
-        <p className="font-[Poppins] text-[15px]  md:text-[18px] font-normal leading-[100%] text-[#0D542B]">
-          Home &gt; Services &gt; Recruiter Services
-        </p>
+        {/* Hero Section */}
+        <div className="relative w-full max-w-[1300px] mx-auto overflow-hidden bg-green-200 rounded-[30px] md:rounded-[60px] px-6 md:px-12 py-8 md:py-10">
+          {/* Background Image */}
+          <img
+            src={w1}
+            alt="Background"
+            className="hidden md:block absolute top-[-56px] left-[-100px] opacity-[90%] md:top-[-40px] md:left-[-120px] w-[455.35px] h-[303.56px] md:h-[250px] rotate-[-23deg]"
+          />
 
-        {/* Title */}
-        <h1 className="mt-6 font-caudex text-[20px] md:text-[22px] font-bold text-green-900">
-          Recruiter Services
-        </h1>
-
-        {/* Subtitle */}
-        <p className="mt-2   max-w-[739px] h-[35px] font-[Poppins] text-[16px] md:text-[20px] italic font-semibold text-green-600 px-2">
-          Find the right skilled employees and job-ready talent with confidence
-        </p>
-
+          {/* Content */}
+          <div className="relative z-10">
+            {/* Breadcrumb */}
+            <p className="text-[15px] md:text-[18px] font-normal text-[#0D542B]">
+              Home &gt; Services &gt; Recruiter Services
+            </p>
+            {/* Title */}
+            <h1 className="mt-5 font-caudex text-[20px] md:text-[30px] font-bold text-green-950 text-center">
+              Recruiter Services
+            </h1>
+            {/* Subtitle */}
+            <p className="mt-3 max-w-[739px] mx-auto text-[16px] md:text-[20px] font-poppins italic font-semibold text-green-700 text-center">
+              Find the right skilled employees and job-ready talent with
+              confidence
+            </p>
+            <img
+              src={w2}
+              alt="Background"
+              className="hidden lg:block absolute top-[54px] lg:top-[10px] left-[1040px] w-[224px] h-[105px] "
+            />{" "}
+          </div>
+        </div>
         {/* Hero Card Banner */}
         <div className="w-full max-w-[1300px] min-h-auto lg:min-h-[420px] mt-10 rounded-2xl lg:rounded-tl-[70px] lg:rounded-tr-[70px] lg:rounded-br-[70px] bg-green-100 mx-auto relative overflow-hidden flex flex-col lg:block p-6 md:p-10 lg:p-0">
           <div className="relative lg:absolute lg:top-[60px] lg:left-[60px] flex flex-col items-center lg:items-start text-center lg:text-left z-10 order-2 lg:order-none">
@@ -296,10 +314,11 @@ const Recruiter = () => {
                   className={`absolute cursor-pointer transition-all duration-500 ease-out ${positions[index]}`}
                 >
                   <div
-                    className={`flex flex-col items-center text-center rounded-tl-[40px] rounded-tr-[40px] rounded-bl-[40px] border bg-green-50 border-green-200 transition-all duration-500 ease-out ${isActive
+                    className={`flex flex-col items-center text-center rounded-tl-[40px] rounded-tr-[40px] rounded-bl-[40px] border bg-green-50 border-green-200 transition-all duration-500 ease-out ${
+                      isActive
                         ? "w-[250px] h-[260px] bg-[#F7FCF8] border-[#B9F8CF] px-4 pt-4 shadow-lg"
                         : "w-[132px] h-[125px] items-center justify-center"
-                      }`}
+                    }`}
                   >
                     <div className="w-[65px] h-[65px] rounded-[14px] border border-[#B9F8CF] bg-[#DCFCE7] flex items-center justify-center">
                       <img
@@ -374,7 +393,8 @@ const Recruiter = () => {
               lineHeight: "140%",
             }}
           >
-            Flexible, compliant workforce solutions tailored to your business needs
+            Flexible, compliant workforce solutions tailored to your business
+            needs
           </p>
 
           {/* Fully responsive layout grid that elegantly drops absolute positions on 1024px screens */}
