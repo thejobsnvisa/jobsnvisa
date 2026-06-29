@@ -12,6 +12,7 @@ export default {
         poppins: ["Poppins", "sans-serif"],
         jost: ["Jost", "sans-serif"],
         dangrek: ["Dangrek", "cursive"],
+        outfit: ["Outfit", "sans-serif"], // Added Outfit
       },
     },
   },

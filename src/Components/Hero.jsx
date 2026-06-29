@@ -15,8 +15,7 @@ const Hero = () => {
           className="hidden md:block absolute md:top-[188px] md:left-[40px] md:w-[307px] md:h-[461px]"
         />
         <h1
-          className="text-orange-300 font-['Outfit'] font-semibold text-[40px] leading-[1] tracking-[0%] mt-8 md:absolute md:right-[80px] md:top-[200px] md:text-right text-center"
-          style={{ fontFamily: "'Outfit', sans-serif" }}
+          className="text-orange-300 font-[Outfit] font-semibold text-[40px] leading-[1] tracking-[0%] mt-8 md:absolute md:right-[80px] md:top-[200px] md:text-right text-center"
         >
           Welcome to JobsNVisa
           <br /> & Start your Journey
