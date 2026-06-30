@@ -15,7 +15,7 @@ const Hero = () => {
           className="hidden md:block absolute md:top-[188px] md:left-[40px] md:w-[307px] md:h-[461px]"
         />
         <h1 className="text-orange-300 font-semibold font-['outfit'] text-[45px] leading-[120%] tracking-[0%] mt-8 md:absolute md:right-[80px] md:top-[200px] md:text-right text-center">
-          <span className="text-green-300"> Welcome to JobsNVisa</span> <br />{" "}
+          <span className="text-green-300"> Welcome to Jobs N Visa </span> <br />{" "}
           <span className="text-orange-300">& Start your Journey</span>
         </h1>
         <p className="mt-2 md:absolute md:top-[360px] md:right-[-150px] md:w-[450px] md:-translate-x-1/2 text-center text-white text-[24px] text-justify leading-[120%] tracking-[0%]">
@@ -26,7 +26,7 @@ const Hero = () => {
           <span className="text-green-200">
             between talent and opportunity with{" "}
           </span>{" "}
-          personalized visa and employment solutions.
+         visa and employment solutions.
         </p>
         <div className="md:mt-2 mt-4 flex items-center gap-6 md:absolute md:top-[540px] md:right-[-60px] md:-translate-x-1/2">
           <a

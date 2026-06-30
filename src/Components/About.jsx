@@ -6,9 +6,7 @@ const About = () => {
     // Use container padding instead of fixed widths
     <section className="w-full max-w-[1440px] mx-auto py-12 md:py-20 px-6 lg:px-20 bg-white">
       {/* Title */}
-      <h1
-        className="text-center text-amber-800 font-bold text-[40px] md:text-[40px] leading-[1] lg:flex lg:justify-center mb-12"
-      >
+      <h1 className="text-center text-amber-800 font-bold text-[40px] md:text-[40px] leading-[1] lg:flex lg:justify-center mb-12">
         About Jobs N Visa
       </h1>
 
@@ -27,19 +25,17 @@ const About = () => {
 
         {/* Right: Content Card */}
         <div className="w-full sm:w-[90%] md:w-[85%] lg:w-[780px] lg:min-h-[500px] rounded-tl-[20px] sm:rounded-tl-[30px] lg:rounded-tl-[80px] rounded-tr-[20px] sm:rounded-tr-[30px] lg:rounded-tr-[80px] bg-white p-4 sm:p-6 md:p-10 flex flex-col justify-center">
-          <p
-            className="lg:text-[17px] sm:text-[14px] md:text-[15px] leading-[26px] sm:leading-[28px] md:leading-[30px] text-green-950 font-medium text-justify mb-6 sm:mb-8"
-          >
+          <p className="lg:text-[17px] sm:text-[14px] md:text-[15px] leading-[26px] sm:leading-[28px] md:leading-[30px] text-green-950 font-medium text-justify mb-6 sm:mb-8">
             At Jobs N Visa, we understand that finding the right opportunities
             in our careers is more than just landing a job, it's about building
             a future. With over a decade of experience in the Australian job
-            market, we specialize in connecting skilled professionals with
+            market, we specialise in connecting skilled professionals with
             employers across critical industries.
             <br />
             <br />
-            Backed by a holistic approach and expert guidance in visa processes
-            and tailored support, we make your journey to employment in
-            Australia seamless, empowering you to succeed with confidence.
+            We combine recruitment expertise with personalised visa guidance to
+            make your journey to employment in Australia as smooth and
+            straightforward as possible.
           </p>
 
           {/* Features - Stacked on mobile, remains as requested */}
@@ -47,7 +43,7 @@ const About = () => {
             {[
               "Expert Visa Guidance",
               "Ongoing Professional Support",
-              "Personalized Executive Search",
+              "Personalised Executive Search  ",
             ].map((item, index) => (
               <button
                 key={index}

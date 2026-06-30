@@ -29,7 +29,7 @@ const WhyChoose = () => {
     },
     {
       title: "Industry Expertise",
-      desc: "Deep understanding of Australian job market trends and requirements across major industries.",
+      desc: "Deep understanding of Australian job market trends and requirements across industries.",
       image: medal,
     },
   ];

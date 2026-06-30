@@ -6,44 +6,44 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 // FAQ data
 const faqs = [
   {
-    question: "Can I work while my visa application is being processed?",
+    question: "Which occupations and industries do you recruit for?",
     answer:
-      "Work rights during visa processing depend on your current visa and local immigration rules. Some applicants receive bridging visas with permission to work.",
+      "We have strong expertise in healthcare recruitment and also recruit across a wide range of industries, including hospitality, engineering, trades, and other sectors where skilled professionals are in demand across Australia.",
+  },
+  {
+    question: "Do you recruit candidates from all countries?",
+    answer:
+      "Yes. We welcome applications from candidates worldwide. Recruitment is based on the employer's requirements, your qualifications, relevant experience, and your eligibility to work in Australia.",
+  },
+  {
+    question: "How do I apply for jobs through Jobs N Visa?",
+    answer:
+      "Simply submit your CV through our website or contact our team. We'll review your profile, assess your eligibility, and match your skills with suitable job opportunities in Australia.",
+  },
+  {
+    question: "What documents do I need to apply for a job?",
+    answer:
+      "Requirements may vary depending on the role, but commonly requested documents include your CV, educational qualifications, professional registrations or licences (if applicable), employment references, and a valid passport.",
+  },
+  {
+    question: "What support does Jobs N Visa provide during the recruitment process?",
+    answer:
+      "From reviewing your profile and matching you with suitable opportunities to coordinating with employers and providing guidance on employer-sponsored visa pathways, our team supports you throughout every stage of your recruitment journey.",
+  },
+  {
+    question: "Do I need a job offer before applying for an employer-sponsored visa?",
+    answer:
+      "In most cases, yes. An employer-sponsored visa generally requires an approved Australian employer to nominate you for a suitable position.",
+  },
+  {
+    question: "Can I change employers while on a work visa?",
+    answer:
+      "Some work visas allow you to change employers, while others require a new sponsorship or approval before you can start working with a different employer. The requirements depend on your visa subclass and individual circumstances.",
   },
   {
     question: "Can a work visa lead to permanent residency?",
     answer:
-      "Yes, many skilled work visas can provide pathways to permanent residency depending on eligibility.",
-  },
-  {
-    question: "Can I change employers on a work visa?",
-    answer:
-      "Some visas allow employer changes while others require sponsorship updates.",
-  },
-  {
-    question: "Can my spouse work on a dependent visa?",
-    answer:
-      "Dependent visa holders may receive work rights depending on visa subclass and country rules.",
-  },
-  {
-    question: "Do I need a job offer before applying?",
-    answer:
-      "Certain work visas require employer sponsorship while others are points-based.",
-  },
-  {
-    question: "What documents are required?",
-    answer:
-      "Usually passport, employment proof, educational certificates, and financial records.",
-  },
-  {
-    question: "Do I need a job offer before applying?",
-    answer:
-      "Certain work visas require employer sponsorship while others are points-based.",
-  },
-  {
-    question: "What documents are required?",
-    answer:
-      "Usually passport, employment proof, educational certificates, and financial records.",
+      "Some employer-sponsored visas in Australia can provide a pathway to permanent residency if you meet the eligibility requirements set by the Australian Government.",
   },
 ];
 
