@@ -572,7 +572,7 @@ const Recruiter = () => {
                 <h4 className="text-white font-bold text-[15px] md:text-[16px] leading-tight mb-6">
                   {card.title}
                 </h4>
-                <p className="text-green-100 font-[Poppins] text-[13px] md:text-[15px] leading-relaxed max-w-[240px]">
+                <p className="text-green-100  text-[13px] md:text-[15px] leading-relaxed max-w-[240px]">
                   {card.description}
                 </p>
               </div>

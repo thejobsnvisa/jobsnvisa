@@ -137,7 +137,7 @@ const Employee = () => {
               Flexible Labour Hire <br />
               &amp; Job Opportunities
             </h3>
-            <p className="max-w-[450px] mt-4 lg:mt-8 lg:ml-2 text-justify font-[Poppins] text-[15px] md:text-[15px] lg:text-[17px] leading-[150%] text-green-900">
+            <p className="max-w-[450px] mt-4 lg:mt-8 lg:ml-2 text-justify  text-[15px] md:text-[15px] lg:text-[17px] leading-[150%] text-green-900">
               Access casual, contract, and short-term job opportunities with
               compliant Australian employers. JobsNVisa connects you to flexible
               roles that match your availability, experience, and career goals,
@@ -308,7 +308,7 @@ const Employee = () => {
                         <h3 className="mt-6 text-[18px] font-bold text-[#0A8A3D]">
                           {card.title}
                         </h3>
-                        <p className="mt-4 text-[16px] italic text-slate-500 leading-relaxed">
+                        <p className="mt-4 text-[16px]  text-slate-500 leading-relaxed">
                           {card.description}
                         </p>
                       </>
@@ -339,7 +339,7 @@ const Employee = () => {
                 <h4 className="text-[14px] md:text-[15px] font-bold text-[#0A8A3D] leading-tight">
                   {card.title}
                 </h4>
-                <p className="mt-2 text-[12px] text-slate-600 hidden md:block">
+               <p className="mt-2 text-[12px] text-slate-600 hidden md:block">
                   {card.description}
                 </p>
               </div>
@@ -435,7 +435,7 @@ const Employee = () => {
             Pre-Employment Support & Registration
           </p>
           <p
-            className="w-full xl:w-[682px]  font-medium text-[15px] md:text-[18px] lg:text-[20px] xl:ml-[329px] mt-5 text-green-600 text-center xl:text-start"
+            className="w-full xl:w-[682px]  font-medium text-[15px] md:text-[18px] lg:text-[20px]  mt-5 text-green-600 text-center"
             style={{
               lineHeight: "140%",
             }}
@@ -536,7 +536,7 @@ const Employee = () => {
                   alt={`${card.title} icon`}
                   className="w-[41.67px] h-[41.67px] mb-3 object-contain brightness-0 invert"
                 />
-                <h4 className="text-white font-bold text-[15px] md:text-[16px] leading-tight mb-2">
+                <h4 className="text-white font-bold text-[15px] md:text-[1px] leading-tight mb-2">
                   {card.title}
                 </h4>
                 <p className="text-green-100 text-[13px] md:text-[15px] leading-relaxed max-w-[240px]">
