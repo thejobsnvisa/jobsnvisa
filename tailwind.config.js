@@ -6,14 +6,14 @@ export default {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        caudex: ["Caudex", "serif"],
-        caveat: ["Caveat", "cursive"],
-        poppins: ["Poppins", "sans-serif"],
-        jost: ["Jost", "sans-serif"],
-        dangrek: ["Dangrek", "cursive"],
-        outfit: ["Outfit", "sans-serif"], // Added Outfit
-      },
+      // fontFamily: {
+      //   caudex: ["Caudex", "serif"],
+      //   caveat: ["Caveat", "cursive"],
+      //   poppins: ["Poppins", "sans-serif"],
+      //   jost: ["Jost", "sans-serif"],
+      //   dangrek: ["Dangrek", "cursive"],
+      //   outfit: ["Outfit", "sans-serif"], // Added Outfit
+      // },
     },
   },
   plugins: [],

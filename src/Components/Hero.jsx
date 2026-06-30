@@ -15,13 +15,13 @@ const Hero = () => {
           className="hidden md:block absolute md:top-[188px] md:left-[40px] md:w-[307px] md:h-[461px]"
         />
         <h1
-          className="text-orange-300 font-[Outfit] font-semibold text-[40px] leading-[1] tracking-[0%] mt-8 md:absolute md:right-[80px] md:top-[200px] md:text-right text-center"
+          className="text-orange-300 font-semibold text-[40px] leading-[1] tracking-[0%] mt-8 md:absolute md:right-[80px] md:top-[200px] md:text-right text-center"
         >
           Welcome to JobsNVisa
           <br /> & Start your Journey
         </h1>
         <p
-          className="mt-2 md:absolute md:top-[340px] md:right-[-180px] md:w-[480px] md:-translate-x-1/2 text-center text-green-100 font-caveat text-[35px] leading-[100%] tracking-[0%]"
+          className="mt-2 md:absolute md:top-[340px] md:right-[-180px] md:w-[480px] md:-translate-x-1/2 text-center text-green-100  text-[28px] text-justify leading-[100%] tracking-[0%]"
         >
           Connect with top employers across Australia's fastest-growing
           industries.
@@ -32,15 +32,13 @@ const Hero = () => {
         <div className="md:mt-2 mt-4 flex items-center gap-6 md:absolute md:top-[540px] md:right-[-60px] md:-translate-x-1/2">
           <a
             href="#"
-            className="bg-green-100 text-green-800 font-['Poppins'] font-semibold text-[14px] leading-[100%] tracking-[0%] py-5 px-6 rounded-tr-[14px] rounded-tl-[14px] w-[180px] md:w-[200px] h-[48px] transition duration-300 text-center"
-            style={{ fontFamily: "'Poppins', sans-serif" }}
+            className="bg-green-100 text-green-800  font-semibold text-[14px] leading-[100%] tracking-[0%] py-5 px-6 rounded-tr-[14px] rounded-tl-[14px] w-[180px] md:w-[200px] h-[48px] transition duration-300 text-center"
           >
             Find Your Dream Job
           </a>
           <a
             href="#"
-            className="bg-amber-100 text-amber-800 font-['Poppins'] font-semibold text-[14px] leading-[100%] h-[48px] tracking-[0%] py-5 px-6 rounded-tr-[14px] rounded-tl-[14px] w-[120px] md:w-auto hover:bg-orange-100 transition duration-300 text-center"
-            style={{ fontFamily: "'Poppins', sans-serif" }}
+            className="bg-amber-100 text-amber-800  font-semibold text-[14px] leading-[100%] h-[48px] tracking-[0%] py-5 px-6 rounded-tr-[14px] rounded-tl-[14px] w-[120px] md:w-auto hover:bg-orange-100 transition duration-300 text-center"
           >
             Post A Job
           </a>

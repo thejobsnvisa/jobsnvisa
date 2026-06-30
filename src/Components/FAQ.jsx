@@ -100,8 +100,7 @@ export default function BottomSections() {
       <section className="max-w-7xl mx-auto px-6 py-20">
         {/* Heading */}
         <h2
-          className="text-4xl font-semibold text-center text-green-900 mb-14"
-          style={{ fontFamily: "'Caudex', serif" }}
+          className="text-4xl font-bold text-center text-green-900 mb-14"
         >
           Frequently Asked Questions
         </h2>

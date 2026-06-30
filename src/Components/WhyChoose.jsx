@@ -53,7 +53,6 @@ const WhyChoose = () => {
             {/* Heading */}
             <h2
               className="text-[28px] sm:text-[32px] md:text-[40px] text-center text-green-800 font-bold px-4"
-              style={{ fontFamily: "'Caudex', serif" }}
             >
               Why Choose Jobs N Visa?
             </h2>

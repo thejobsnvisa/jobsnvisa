@@ -4,9 +4,7 @@ const ProcessOverview = () => {
     <section className="w-full py-8 md:py-12 px-4">
       <div className="max-w-7xl mx-auto">
          <h2
-          className="text-center text-orange-300 font-bold text-[40px] lg:text-[40px] mt-2"
-          style={{ fontFamily: "'Caudex', serif" }}
-        >
+          className="text-center text-orange-300 font-bold text-[40px] lg:text-[40px] mt-2"        >
           Process Overview
         </h2>
 

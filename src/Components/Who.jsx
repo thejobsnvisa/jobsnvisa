@@ -7,7 +7,6 @@ const Who = () => {
       <div className="max-w-7xl mx-auto px-4">
         <h2
           className="text-center text-green-800 font-bold text-[40px] lg:text-[40px] mt-2"
-          style={{ fontFamily: "'Caudex', serif" }}
         >
           Who Is Jobs N Visa For?
         </h2>
@@ -31,7 +30,6 @@ const Who = () => {
             <div className="absolute inset-0 flex flex-col items-center justify-center  px-6 text-center">
               <h3
                 className="font-semibold text-[24px] text-green-900 mb-4"
-                style={{ fontFamily: "'Poppins', serif" }}
               >
                 For Job Seekers
               </h3>
@@ -65,7 +63,6 @@ const Who = () => {
             <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-6 text-center">
               <h3
                 className="font-semibold text-[24px] text-green-900 mb-4"
-                style={{ fontFamily: "'Poppins', serif" }}
               >
                 For Employers
               </h3>
