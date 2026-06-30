@@ -115,11 +115,11 @@ const Employee = () => {
               Home &gt; Services &gt; Employee Services
             </p>
             {/* Title */}
-            <h1 className="mt-5 font-caudex text-[20px] md:text-[30px] font-bold text-green-950 text-center">
+            <h1 className="mt-5 text-[20px] md:text-[30px] font-bold text-green-950 text-center">
               Employee Services
             </h1>
             {/* Subtitle */}
-            <p className="mt-3 max-w-[739px] mx-auto text-[16px] md:text-[20px] font-poppins italic font-semibold text-green-700 text-center">
+            <p className="mt-3 max-w-[739px] mx-auto text-[16px] md:text-[20px] font-semibold text-green-700 text-center">
               Find the right job, visa guidance and growth opportunities in
               Australia
             </p>
@@ -133,11 +133,11 @@ const Employee = () => {
         {/* Hero Card Banner */}
         <div className="w-full max-w-[1300px] min-h-auto lg:min-h-[420px] mt-10 rounded-2xl lg:rounded-tl-[70px] lg:rounded-tr-[70px] lg:rounded-br-[70px] bg-green-100 mx-auto relative overflow-hidden flex flex-col lg:block p-6 md:p-10 lg:p-0">
           <div className="relative lg:absolute lg:top-[60px] lg:left-[60px] flex flex-col items-center lg:items-start text-center lg:text-left z-10 order-2 lg:order-none">
-            <h3 className="max-w-[455px] font-jost text-[26px] md:text-[32px] lg:text-[40px] font-semibold italic leading-[120%] text-[#475569]">
+            <h3 className="max-w-[455px] text-[26px] md:text-[32px] lg:text-[40px] font-semibold leading-[120%] text-[#475569]">
               Flexible Labour Hire <br />
               &amp; Job Opportunities
             </h3>
-            <p className="max-w-[450px] mt-4 lg:mt-10 lg:ml-2 text-justify font-[Poppins] text-[15px] md:text-[15px] lg:text-[16px] leading-[150%] text-green-900">
+            <p className="max-w-[450px] mt-4 lg:mt-8 lg:ml-2 text-justify font-[Poppins] text-[15px] md:text-[15px] lg:text-[17px] leading-[150%] text-green-900">
               Access casual, contract, and short-term job opportunities with
               compliant Australian employers. JobsNVisa connects you to flexible
               roles that match your availability, experience, and career goals,
@@ -167,7 +167,6 @@ const Employee = () => {
         <h3
           className="max-w-[800px] mx-auto mt-8 text-[26px] md:text-[34px] lg:text-[40px] font-bold text-amber-700 text-center px-4"
           style={{
-            fontFamily: "'Caudex'",
             fontWeight: 700,
             lineHeight: "120%",
           }}
@@ -267,7 +266,6 @@ const Employee = () => {
         <div className="relative z-10">
           <p
             className="text-center text-[24px] md:text-[30px] lg:text-[35px] font-bold text-green-950 px-2"
-            style={{ fontFamily: "'Caudex'" }}
           >
             Fair Pay & Workplace Compliance
           </p>
@@ -356,7 +354,6 @@ const Employee = () => {
           <h2
             className="text-[26px] md:text-[32px] lg:text-[35px] font-bold text-green-900 mb-4"
             style={{
-              fontFamily: "'Caudex'",
               fontWeight: 700,
               lineHeight: "120%",
             }}
@@ -366,7 +363,6 @@ const Employee = () => {
           <p
             className="text-[15px] md:text-[18px] lg:text-[20px] font-medium text-green-700 max-w-[600px] mx-auto mb-10"
             style={{
-              fontFamily: "'Poppins'",
               fontWeight: 500,
               lineHeight: "140%",
             }}
@@ -432,7 +428,6 @@ const Employee = () => {
           <p
             className="text-center text-[26px] md:text-[32px] lg:text-[35px] font-bold text-green-900"
             style={{
-              fontFamily: "'Caudex'",
               fontWeight: 700,
               lineHeight: "100%",
             }}
@@ -440,7 +435,7 @@ const Employee = () => {
             Pre-Employment Support & Registration
           </p>
           <p
-            className="w-full xl:w-[682px] font-[Poppins] font-medium text-[15px] md:text-[18px] lg:text-[20px] xl:ml-[329px] mt-5 text-green-600 text-center xl:text-start"
+            className="w-full xl:w-[682px]  font-medium text-[15px] md:text-[18px] lg:text-[20px] xl:ml-[329px] mt-5 text-green-600 text-center xl:text-start"
             style={{
               lineHeight: "140%",
             }}
@@ -457,7 +452,7 @@ const Employee = () => {
                 className="w-[36.5px] h-[49px] object-contain mb-4"
                 alt="icon"
               />
-              <p className="font-[Poppins] font-semibold text-[17px] md:text-[19px] lg:text-[20px] text-green-600 text-center px-2">
+              <p className="font-semibold text-[17px] md:text-[19px] lg:text-[20px] text-green-600 text-center px-2">
                 Pre-Employment Preparation
               </p>
               <ul className="w-full font-normal text-[14px] md:text-[16px] lg:text-[18px] text-slate-900 text-center mt-4 list-disc list-inside space-y-1">
@@ -475,7 +470,7 @@ const Employee = () => {
                 className="w-[26.5px] h-[39px] object-contain mb-4"
                 alt="icon"
               />
-              <p className="font-[Poppins] font-semibold text-[17px] md:text-[19px] lg:text-[20px] text-green-600 text-center px-2">
+              <p className="font-semibold text-[17px] md:text-[19px] lg:text-[20px] text-green-600 text-center px-2">
                 Registration & Compliance
               </p>
               <ul className="w-full font-normal text-[14px] md:text-[16px] lg:text-[18px] text-slate-900 text-center mt-4 list-disc list-inside space-y-1">
@@ -493,7 +488,6 @@ const Employee = () => {
         <h3
           className="max-w-[892px] mx-auto text-[24px] md:text-[30px] lg:text-[35px] font-bold text-green-900 text-center px-2"
           style={{
-            fontFamily: "'Caudex'",
             fontWeight: 700,
             lineHeight: "130%",
           }}
@@ -542,10 +536,10 @@ const Employee = () => {
                   alt={`${card.title} icon`}
                   className="w-[41.67px] h-[41.67px] mb-3 object-contain brightness-0 invert"
                 />
-                <h4 className="text-white font-bold text-[15px] md:text-[15px] leading-tight mb-2">
+                <h4 className="text-white font-bold text-[15px] md:text-[16px] leading-tight mb-2">
                   {card.title}
                 </h4>
-                <p className="text-green-100 font-[Poppins] text-[13px] md:text-[13px] leading-relaxed max-w-[240px]">
+                <p className="text-green-100 text-[13px] md:text-[15px] leading-relaxed max-w-[240px]">
                   {card.description}
                 </p>
               </div>
