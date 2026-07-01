@@ -208,13 +208,13 @@ const Recruiter = () => {
                 className="absolute inset-0 p-6 flex flex-col justify-end gap-2"
                 style={{
                   background:
-                    "linear-gradient(184.15deg, rgba(0, 0, 0, 0) 45.11%, rgba(0, 0, 0, 0.6) 64.99%, #000000 96.62%)",
+                    "linear-gradient(180.6deg, rgba(1, 188, 64, 0.05) 30.1%, rgba(1, 188, 64, 0.5) 56.87%, #008F30 99.49%)",
                 }}
               >
                 <h4 className="text-white text-center text-[18px] w-full font-semibold">
                   Employee Onboarding
                 </h4>
-                <ul className="text-slate-300 text-[14px] lg:text-[16px] w-full text-center leading-[1.5] font-bold list-disc list-inside">
+                <ul className="text-slate-50 text-[14px] lg:text-[16px] w-full text-center leading-[1.5] font-bold list-disc list-inside">
                   <li>System & Access Setup Support</li>
                   <li>Documentation & Joining Formalities</li>
                   <li>Orientation & Company Policy Briefing</li>
@@ -232,13 +232,13 @@ const Recruiter = () => {
                 className="absolute inset-0 p-6 flex flex-col justify-end gap-2"
                 style={{
                   background:
-                    "linear-gradient(184.15deg, rgba(0, 0, 0, 0) 45.11%, rgba(0, 0, 0, 0.6) 64.99%, #000000 96.62%)",
+                    "linear-gradient(180.6deg, rgba(1, 188, 64, 0.05) 30.1%, rgba(1, 188, 64, 0.5) 56.87%, #008F30 99.49%)",
                 }}
               >
                 <h4 className="text-white text-center text-[18px] w-full font-semibold">
                   Training & Development
                 </h4>
-                <ul className="text-slate-300 text-[14px] lg:text-[16px] w-full text-center leading-[1.5] font-bold list-disc list-inside">
+                <ul className="text-slate-50 text-[14px] lg:text-[16px] w-full text-center leading-[1.5] font-bold list-disc list-inside">
                   <li>Skill Enhancement & Upskilling</li>
                   <li>Role-Specific Training Programs</li>
                   <li>Performance Monitoring & Feedback</li>
@@ -256,13 +256,13 @@ const Recruiter = () => {
                 className="absolute inset-0 p-6 flex flex-col justify-end gap-2"
                 style={{
                   background:
-                    "linear-gradient(184.15deg, rgba(0, 0, 0, 0) 45.11%, rgba(0, 0, 0, 0.6) 64.99%, #000000 96.62%)",
+                    "linear-gradient(180.6deg, rgba(1, 188, 64, 0.05) 30.1%, rgba(1, 188, 64, 0.5) 56.87%, #008F30 99.49%)",
                 }}
               >
                 <h4 className="text-white text-center text-[18px] w-full font-semibold">
                   Retention & Engagement
                 </h4>
-                <ul className="text-slate-300 text-[14px] lg:text-[16px] w-full text-center leading-[1.5] font-bold list-disc list-inside">
+                <ul className="text-slate-50 text-[14px] lg:text-[16px] w-full text-center leading-[1.5] font-bold list-disc list-inside">
                   <li>Employee Engagement Initiatives</li>
                   <li>Attrition Analysis & Retention Strategy</li>
                   <li>Ongoing HR Support & Issue Resolution</li>
