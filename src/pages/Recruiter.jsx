@@ -364,7 +364,7 @@ const Recruiter = () => {
             Our Labour Hire Solutions
           </h2>
           <p
-            className="text-[15px] md:text-[18px] lg:text-[20px] font-medium text-green-700 max-w-[600px] mx-auto mb-10"
+            className="text-[15px] md:text-[18px] lg:text-[20px] font-medium text-green-700 max-w-[650px] mx-auto mb-10"
             style={{
               fontWeight: 500,
               lineHeight: "140%",
@@ -500,7 +500,7 @@ const Recruiter = () => {
       {/* Permanent & Executive Recruitment Section with Reveal-on-Hover Feature */}
       <div className="w-full max-w-[1440px] mx-auto bg-white py-10 mt-16 md:mt-24 lg:mt-32 mb-12 px-4">
         <h3
-          className="max-w-[930px] mx-auto text-[24px] md:text-[30px] lg:text-[35px] font-bold text-green-900 text-center px-2"
+          className="max-w-[950px] mx-auto text-[24px] md:text-[30px] lg:text-[35px] font-bold text-green-900 text-center px-2"
           style={{
             fontWeight: 700,
             lineHeight: "130%",

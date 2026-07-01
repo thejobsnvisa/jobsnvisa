@@ -441,7 +441,7 @@ const Employee = () => {
             Pre-Employment Support & Registration
           </p>
           <p
-            className="w-full xl:w-[682px]  font-medium text-[15px] md:text-[18px] lg:text-[20px]  mt-5 text-green-600 text-center"
+            className="w-full xl:w-[682px]  font-medium text-[15px] md:text-[18px] lg:text-[20px] xl:ml-[315px] mt-5 text-green-600 text-center"
             style={{
               lineHeight: "140%",
             }}
