@@ -94,7 +94,9 @@ const Employee = () => {
     },
   ];
 
-  const [selectedIcon, setSelectedIcon] = useState();
+  const payrollSlides = [payrollCards.slice(0, 3), payrollCards.slice(3, 6)];
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [selectedIcon, setSelectedIcon] = useState(undefined);
 
   return (
     <section className="max-w-[1420px] mx-auto px-4 pt-10 pb-12 overflow-x-hidden">
@@ -253,7 +255,7 @@ const Employee = () => {
 
       {/* Why Employers Trust Our Payroll Services */}
       <div
-        className="w-full max-w-full lg:max-w-[1500px] h-auto lg:h-[760px] rounded-[30px] lg:rounded-[100px] overflow-hidden mx-auto relative mt-16 py-12 px-4"
+        className="w-full max-w-full lg:max-w-[1400px] h-auto lg:h-[450px] rounded-[30px] lg:rounded-[100px] overflow-hidden mx-auto relative mt-16 py-12 px-4"
         style={{ background: "#69D29A80" }}
       >
         <img
@@ -270,29 +272,19 @@ const Employee = () => {
             Fair Pay & Workplace Compliance
           </p>
 
-          {/* Desktop Absolute Grid Map - Displays only on Desktop/1440px+ widths */}
-          <div className="relative xl:block hidden w-full h-[560px] mt-10">
-            {payrollCards.map((card, index) => {
-              const positions = [
-                "left-[310px] top-[60px]",
-                "left-[680px] top-[60px]",
-                "left-[1050px] top-[60px]",
-                "left-[140px] top-[330px]",
-                "left-[510px] top-[330px]",
-                "left-[880px] top-[330px]",
-              ];
-              const isActive = selectedIcon === index;
-              return (
-                <div
+              <div className="overflow-hidden">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8 justify-items-center">
+                {payrollSlides[currentSlide].map((card, index) => (
+                 <div
                   key={index}
                   onMouseEnter={() => setSelectedIcon(index)}
                   onMouseLeave={() => setSelectedIcon(undefined)}
-                  className={`absolute cursor-pointer transition-all duration-500 ease-out ${positions[index]}`}
+                  className="cursor-pointer transition-all duration-500 ease-out flex justify-center"
                 >
                   <div
                     className={`flex flex-col items-center text-center rounded-tl-[40px] rounded-tr-[40px] rounded-bl-[40px] border bg-green-50 border-green-200 transition-all duration-500 ease-out ${
-                      isActive
-                        ? "w-[250px] h-[260px] bg-[#F7FCF8] border-[#B9F8CF] px-4 pt-4 shadow-lg"
+                      selectedIcon === index
+                        ? "w-[250px] h-[260px] bg-[#F7FCF8] border-[#B9F8CF] px-4 pt-6 shadow-lg"
                         : "w-[132px] h-[125px] items-center justify-center"
                     }`}
                   >
@@ -300,10 +292,10 @@ const Employee = () => {
                       <img
                         src={card.icon}
                         alt={card.title}
-                        className={`object-contain ${isActive ? "w-6 h-6" : "w-8 h-8"}`}
+                        className={`object-contain ${selectedIcon === index ? "w-6 h-6" : "w-8 h-8"}`}
                       />
                     </div>
-                    {isActive && (
+                    {selectedIcon === index && (
                       <>
                         <h3 className="mt-6 text-[18px] font-bold text-[#0A8A3D]">
                           {card.title}
@@ -315,10 +307,24 @@ const Employee = () => {
                     )}
                   </div>
                 </div>
-              );
-            })}
-          </div>
+                ))}
+              </div>
+            </div>
 
+            <div className="flex justify-center gap-3 mt-8">
+              {payrollSlides.map((_, slideIndex) => (
+                <button
+                  key={slideIndex}
+                  type="button"
+                  onClick={() => setCurrentSlide(slideIndex)}
+                  className={`h-3 w-3 mt-1 rounded-full transition-all ${
+                    currentSlide === slideIndex
+                      ? "bg-green-900"
+                      : "bg-white border border-green-900/30"
+                  }`}
+                />
+              ))}
+            </div>
           {/* Mobile, Tablet & 1024px Laptop View LayoutFallback */}
           <div className="xl:hidden grid grid-cols-2 md:grid-cols-3 gap-4 mt-8 relative z-20 max-w-[1000px] mx-auto">
             {payrollCards.map((card, index) => (
