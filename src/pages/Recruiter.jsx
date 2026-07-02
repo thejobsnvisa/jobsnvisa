@@ -275,7 +275,7 @@ const Recruiter = () => {
 
       {/* Why Employers Trust Our Payroll Services */}
       <div
-        className="w-full max-w-full lg:max-w-[1400px] h-auto lg:h-[450px] rounded-[30px] lg:rounded-[100px] overflow-hidden mx-auto relative mt-16 py-12 px-4"
+        className="w-full max-w-full lg:max-w-[1400px] h-auto lg:h-[460px] rounded-[30px] lg:rounded-[100px] overflow-hidden mx-auto relative mt-16 py-12 px-4"
         style={{ background: "#69D29A80" }}
       >
         <img
