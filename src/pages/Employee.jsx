@@ -186,15 +186,15 @@ const Employee = () => {
               />
               <div
                 className="absolute inset-0 p-6 flex flex-col justify-end gap-2"
-                style={{
+                 style={{
                   background:
-                    "linear-gradient(184.15deg, rgba(0, 0, 0, 0) 45.11%, rgba(0, 0, 0, 0.6) 64.99%, #000000 96.62%)",
+                    "linear-gradient(180.6deg, rgba(1, 188, 64, 0.05) 30.1%, rgba(1, 188, 64, 0.5) 56.87%, #008F30 99.49%)",
                 }}
               >
                 <h4 className="text-white text-center text-[18px] w-full font-semibold">
                   Workplace Onboarding
                 </h4>
-                <ul className="text-slate-300 text-[14px] lg:text-[16px] w-full text-center leading-[1.5] font-bold list-disc list-inside">
+                <ul className="text-slate-50 text-[14px] lg:text-[16px] w-full text-center leading-[1.5] font-bold list-disc list-inside">
                   <li>Employment contracts & documentation</li>
                   <li>Workplace induction & safety briefing</li>
                   <li>Role clarity & expectations</li>
@@ -210,15 +210,15 @@ const Employee = () => {
               />
               <div
                 className="absolute inset-0 p-6 flex flex-col justify-end gap-2"
-                style={{
+                 style={{
                   background:
-                    "linear-gradient(184.15deg, rgba(0, 0, 0, 0) 45.11%, rgba(0, 0, 0, 0.6) 64.99%, #000000 96.62%)",
+                    "linear-gradient(180.6deg, rgba(1, 188, 64, 0.05) 30.1%, rgba(1, 188, 64, 0.5) 56.87%, #008F30 99.49%)",
                 }}
               >
                 <h4 className="text-white text-center text-[18px] w-full font-semibold">
                   Ongoing Support
                 </h4>
-                <ul className="text-slate-300 text-[14px] lg:text-[16px] w-full text-center leading-[1.5] font-bold list-disc list-inside">
+                <ul className="text-slate-50 text-[14px] lg:text-[16px] w-full text-center leading-[1.5] font-bold list-disc list-inside">
                   <li>Issue resolution & employer liaison</li>
                   <li>HR assistance during employment</li>
                   <li>Assignment continuity support</li>
@@ -236,13 +236,13 @@ const Employee = () => {
                 className="absolute inset-0 p-6 flex flex-col justify-end gap-2"
                 style={{
                   background:
-                    "linear-gradient(184.15deg, rgba(0, 0, 0, 0) 45.11%, rgba(0, 0, 0, 0.6) 64.99%, #000000 96.62%)",
+                    "linear-gradient(180.6deg, rgba(1, 188, 64, 0.05) 30.1%, rgba(1, 188, 64, 0.5) 56.87%, #008F30 99.49%)",
                 }}
               >
                 <h4 className="text-white text-center text-[18px] w-full font-semibold">
                   Retention & Stability
                 </h4>
-                <ul className="text-slate-300 text-[14px] lg:text-[16px] w-full text-center leading-[1.5] font-bold list-disc list-inside">
+                <ul className="text-slate-50 text-[14px] lg:text-[16px] w-full text-center leading-[1.5] font-bold list-disc list-inside">
                   <li>Temp-to-perm transitions</li>
                   <li>Long-term career planning</li>
                   <li>Performance check-ins</li>
