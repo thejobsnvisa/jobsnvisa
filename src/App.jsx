@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Footer from './Components/Footer'
 import Recruiter from './pages/Recruiter'
 import Employee from './pages/Employee'
+import Gprecuirter from './pages/Gprecuirter'
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/recruiters" element={<Recruiter />} />
-        <Route path="/employee" element={<Employee/>} />
+        <Route path="/recruiters-services" element={<Recruiter />} />
+        <Route path="/employee-services" element={<Employee/>} />
+        <Route path="/recruiters" element={<Gprecuirter />} />
       </Routes>
       <Footer/>
     </Router>

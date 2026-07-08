@@ -16,8 +16,8 @@ const Navbar = () => {
   ];
 
   const serviceItems = [
-    { name: "Recruiter Services", href: "/recruiters" },
-    { name: "Employee Services", href: "/employee" },
+    { name: "Recruiter Services", href: "/recruiters-services" },
+    { name: "Employee Services", href: "/employee-services" },
   ];
 
   return (

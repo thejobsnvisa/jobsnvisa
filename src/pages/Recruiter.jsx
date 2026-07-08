@@ -169,7 +169,7 @@ const Recruiter = () => {
               <img
                 src={job}
                 alt="job"
-                className="w-7 h-6 brightness-0 invert"
+                className="w-7 h-6 brightness-0 invert lg:ml-[-20px]"
               />
               Get Started
             </button>
