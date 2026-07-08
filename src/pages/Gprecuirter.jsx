@@ -8,48 +8,48 @@ import w2 from "../assets/Vector1.svg";
 import job from "../assets/job.svg";
 import { useState } from "react";
 const Gprecuirter = () => {
-   const cards = [
-              {
-                icon: h1,
-                title: "DPA & Regional Focus",
-                description:
-                  "We provide specialized support for all your GP hiring needs.",
-              },
-              {
-                icon: h2,
-                title: "Global GP Talent",
-                description:
-                  "Hire skilled General Practitioners from UK, Ireland, Canada, New Zealand.",
-              },
-              {
-                icon: c2,
-                title: "Fully Compliant",
-                description:
-                  "We provide specialized support for all your GP hiring needs.",
-              },
-            ];
-          
-            // 0 = first card center, 1 = second card center, 2 = third card center
-            const [centerIndex, setCenterIndex] = useState(1);
-          
-            const handleClick = (clickedIndex) => {
-              setCenterIndex(clickedIndex);
-            };
-          
-            const getPosition = (index) => {
-              if (index === centerIndex) return "center";
-          
-              if (
-                (centerIndex === 0 && index === 2) ||
-                (centerIndex === 1 && index === 0) ||
-                (centerIndex === 2 && index === 1)
-              ) {
-                return "left";
-              }
-          
-              return "right";
-            };
-          
+  const cards = [
+    {
+      icon: h1,
+      title: "DPA & Regional Focus",
+      description:
+        "We provide specialized support for all your GP hiring needs.",
+    },
+    {
+      icon: h2,
+      title: "Global GP Talent",
+      description:
+        "Hire skilled General Practitioners from UK, Ireland, Canada, New Zealand.",
+    },
+    {
+      icon: c2,
+      title: "Fully Compliant",
+      description:
+        "We provide specialized support for all your GP hiring needs.",
+    },
+  ];
+
+  // 0 = first card center, 1 = second card center, 2 = third card center
+  const [centerIndex, setCenterIndex] = useState(1);
+
+  const handleClick = (clickedIndex) => {
+    setCenterIndex(clickedIndex);
+  };
+
+  const getPosition = (index) => {
+    if (index === centerIndex) return "center";
+
+    if (
+      (centerIndex === 0 && index === 2) ||
+      (centerIndex === 1 && index === 0) ||
+      (centerIndex === 2 && index === 1)
+    ) {
+      return "left";
+    }
+
+    return "right";
+  };
+
   return (
     <div>
       <section className="max-w-[1440px] mx-auto px-4 pt-10 pb-12 overflow-x-hidden">
@@ -130,36 +130,34 @@ const Gprecuirter = () => {
                 </div>
               </div>
 
-
               {/* Right Section */}
-              <div className="w-full overflow-hidden lg:w-1/2 flex xl:justify-end justify-end">
-                <div className="relative left-0 md:left-[40px] w-full max-w-[450px] h-[520px] bg-[#E6F5EB] rounded-b-[80px]">
+              <div className="w-full lg:w-1/2 flex justify-end">
+                <div className="relative left-0 md:left-[48px] w-full md:w-[450px] h-[300px] md:h-[520px] bg-[#E6F5EB] rounded-b-[40px] md:rounded-b-[80px]">
                   <img
                     src={g1}
                     alt="Doctor"
                     className="
-        absolute
+        absolute 
         bottom-0
-        md:object-cover
-        md:overflow-hidden
-        lg:left-[-120px]
-        md:ml-[-240px]
-        left-[-40px]
-        md:left-[-180px]
-        w-[560px]
+        ml-[-25px]
+        xl:ml-[-60px]
+        lg:ml-[-260px]
+        md:ml-[-420px]
+        w-full 
         md:w-[760px]
-        h-[520px]
+        h-[300px]
+        md:h-[520px]
         max-w-none
         object-cover
-        xl:translate-x-[-60px]
+        xl:translate-x-[-340px]
       "
                   />
                 </div>
               </div>
             </div>
           </div>
-               <div
-            className="relative w-full max-w-[1440px] rounded-[100px] mt-10 bg-cover bg-center px-4 py-10 md:px-8 md:py-0 h-auto md:h-[520px]"
+          <div
+            className="relative w-full max-w-[1440px] rounded-[40px] lg:rounded-[100px]  mt-10 bg-cover bg-center px-4 py-10 md:px-8 md:py-0 h-auto md:h-[520px]"
             style={{
               backgroundImage: `linear-gradient(180deg,#038E44B2,#038E44B2),url(${g2})`,
             }}
@@ -182,8 +180,8 @@ const Gprecuirter = () => {
                   position === "left"
                     ? "relative mx-auto mt-6 w-full max-w-[340px] md:absolute md:left-[-20px] lg:left-[20px] xl:left-[140px] md:top-10 md:w-[200px] lg:w-[250px] md:h-[200px] md:scale-95 md:z-10"
                     : position === "center"
-                    ? "relative mx-auto mt-6 w-full max-w-[340px] md:absolute md:left-1/2 md:-translate-x-1/2 md:top-0 md:w-[300px] lg:w-[350px] md:h-[270px] md:scale-100 md:z-20"
-                    : "relative mx-auto mt-6 w-full max-w-[340px] md:absolute md:right-[-20px] lg:right-[20px] xl:right-[140px] md:top-10 md:w-[200px] lg:w-[250px] md:h-[200px] md:scale-95 md:z-10";
+                      ? "relative mx-auto mt-6 w-full max-w-[340px] md:absolute md:left-1/2 md:-translate-x-1/2 md:top-0 md:w-[300px] lg:w-[350px] md:h-[270px] md:scale-100 md:z-20"
+                      : "relative mx-auto mt-6 w-full max-w-[340px] md:absolute md:right-[-20px] lg:right-[20px] xl:right-[140px] md:top-10 md:w-[200px] lg:w-[250px] md:h-[200px] md:scale-95 md:z-10";
 
                 return (
                   <div
@@ -215,7 +213,6 @@ const Gprecuirter = () => {
               })}
             </div>
           </div>
-
         </div>
       </section>
     </div>
