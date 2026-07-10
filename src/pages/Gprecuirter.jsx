@@ -2,11 +2,14 @@ import w1 from "../assets/w1.png";
 import g1 from "../assets/g1.png";
 import g2 from "../assets/g2.png";
 import h1 from "../assets/h1.svg";
+import h6 from "../assets/h6.png"
 import c2 from "../assets/c2.svg";
 import h2 from "../assets/h2.svg";
 import w2 from "../assets/Vector1.svg";
 import job from "../assets/job.svg";
-import { useState } from "react";
+import c3 from "../assets/Frame357.svg";
+import { useState, useEffect } from "react";
+import GPRecruitmentSolutions from "../Components/GPRecruitmentSolutions";
 const Gprecuirter = () => {
   const cards = [
     {
@@ -29,8 +32,20 @@ const Gprecuirter = () => {
     },
   ];
 
+  const offerIcon = c3;
+  const offerItems = [{ icon: offerIcon }];
+
+  // processItems removed (previously unused)
+
   // 0 = first card center, 1 = second card center, 2 = third card center
   const [centerIndex, setCenterIndex] = useState(1);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCenterIndex((prevIndex) => (prevIndex + 1) % cards.length);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, [cards.length]);
 
   const handleClick = (clickedIndex) => {
     setCenterIndex(clickedIndex);
@@ -52,7 +67,7 @@ const Gprecuirter = () => {
 
   return (
     <div>
-      <section className="max-w-[1440px] mx-auto px-4 pt-10 pb-12 overflow-x-hidden">
+      <section className="max-w-[1440px] mx-auto px-4 pt-10 pb-12 overflow-x-visible">
         <div className="flex flex-col items-center text-center mt-24 lg:mt-24">
           {/* Hero Section */}
           <div className="relative w-full max-w-[1300px] mx-auto overflow-hidden bg-green-200 rounded-[30px] md:rounded-[60px] px-6 md:px-12 py-8 md:py-10">
@@ -178,10 +193,10 @@ const Gprecuirter = () => {
 
                 const classes =
                   position === "left"
-                    ? "relative mx-auto mt-6 w-full max-w-[340px] md:absolute md:left-[-20px] lg:left-[20px] xl:left-[140px] md:top-10 md:w-[200px] lg:w-[250px] md:h-[200px] md:scale-95 md:z-10"
+                    ? "relative mx-auto mt-6 w-full max-w-[340px] md:absolute md:left-1/2 xl:-translate-x-[200%] md:-translate-x-[180%] lg:-translate-x-[180%] md:top-10 md:w-[200px] lg:w-[250px] md:h-[200px] md:scale-95 md:z-10"
                     : position === "center"
                       ? "relative mx-auto mt-6 w-full max-w-[340px] md:absolute md:left-1/2 md:-translate-x-1/2 md:top-0 md:w-[300px] lg:w-[350px] md:h-[270px] md:scale-100 md:z-20"
-                      : "relative mx-auto mt-6 w-full max-w-[340px] md:absolute md:right-[-20px] lg:right-[20px] xl:right-[140px] md:top-10 md:w-[200px] lg:w-[250px] md:h-[200px] md:scale-95 md:z-10";
+                      : "relative mx-auto mt-6 w-full max-w-[340px] md:absolute md:left-1/2 xl:translate-x-[100%] lg:translate-x-[80%] md:translate-x-[80%] md:top-10 md:w-[200px] lg:w-[250px] md:h-[200px] md:scale-95 md:z-10";
 
                 return (
                   <div
@@ -213,9 +228,67 @@ const Gprecuirter = () => {
               })}
             </div>
           </div>
-        </div>
-      </section>
-    </div>
+          <div className="w-full max-w-[1440px] mx-auto mt-10 px-5 lg:px-10">
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+              {/* Left Content */}
+              <div className="w-full flex flex-col mt-6">
+                <h3 className="text-[28px] lg:text-[32px] text-center font-semibold leading-tight text-slate-700">
+                  What We Offer
+                </h3>
+                <h6 className="mt-3 text-[18px] lg:text-[20px] font-semibold text-center leading-tight text-slate-500">
+                  Expert GP recruitment you can trust
+                </h6>
+                <div className="mt-8 flex flex-col sm:flex-row gap-[50px]">
+                  {offerItems.map((item, idx) => (
+                    <img
+                      key={idx}
+                      src={item.icon}
+                      alt={item.title || ""}
+                      className="w-78 h-80 mx-auto block xl:ml-[150px] lg:ml-[20px] md:ml-[-10px] sm:ml-[50px] sm:mt-0 mt-4"
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+              <GPRecruitmentSolutions/>
+            <div className="w-[1440px] h-[600px]">
+              <p className="w-[434px] h-[45px] mt-[50px] ml-[503px] font-bold text-[30px] text-green-900">Why to choose Jobs N Visa?</p>
+             <img
+                src={h6}
+                alt="GP recruitment overview"
+                className="w-full lg:w-[666px] h-[500px] rounded-[80px] mt-[38px]"
+              />
+
+              <div className="w-full  flex flex-col gap-6 ml-[720px] mt-[-485px]">
+                <div className="w-[530px] h-[230px] rounded-[30px] bg-green-50 p-8 " style={{ boxShadow: '0px 4px 30px 0px #00582933' }}>
+                  <p className="text-slate-500 font-bold text-[22px] mb-4">
+                    Employee
+                  </p>
+                <ul className="w-full max-w-[447px] text-left font-semibold text-[18px] text-slate-700 space-y-2 mb-8">
+                    <li>• Multiple GP roles across Australia</li>
+                    <li>• Clear guidance on registration pathways</li>
+                    <li>• Support with relocation and interviews</li>
+                    <li>• Guidance on employer-sponsored visas</li>
+                  </ul>
+                </div>
+
+                <div className="w-[530px] h-[230px] rounded-[30px] bg-slate-100 p-8 ml-[140px]"style={{ boxShadow: '0px 4px 30px 0px #00582933' }}>
+                  <p className="text-green-700 font-bold text-[22px] mb-4">
+                    Employer
+                  </p>
+                <ul className="w-full max-w-[447px] text-left font-semibold text-[18px]  text-green-800 space-y-2 mb-8">
+                    <li>• Access to overseasQuickly reduce GP shortages</li>
+                    <li>• Access local and overseas talent</li>
+                    <li>• Ensure fully compliant recruitment process</li>
+                    <li>• Plan long-term workforce strategyt</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
   );
 };
 
