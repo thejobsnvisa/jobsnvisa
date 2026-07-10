@@ -67,7 +67,7 @@ const Gprecuirter = () => {
 
   return (
     <div>
-      <section className="max-w-[1440px] mx-auto px-4 pt-10 pb-12 overflow-x-visible">
+      <section className="max-w-[1440px] mx-auto px-4 pt-10 pb-12 overflow-x-visible shrink-0">
         <div className="flex flex-col items-center text-center mt-24 lg:mt-24">
           {/* Hero Section */}
           <div className="relative w-full max-w-[1300px] mx-auto overflow-hidden bg-green-200 rounded-[30px] md:rounded-[60px] px-6 md:px-12 py-8 md:py-10">
