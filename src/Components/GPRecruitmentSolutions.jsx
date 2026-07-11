@@ -88,8 +88,22 @@ export default function GPRecruitmentSolutions() {
   return (
     <section className="mt-6">
       <div className="max-w-[1550px] mx-auto justify-strat flex">
-        <div className=" w-[1440px] h-[590px] bg-[#F1F5F9] h-[580px] rounded-[100px]  relative overflow-hidden">
-          <div className="relative text-center mt-6">
+<div
+  className="
+    w-full
+    xl:w-[1440px]
+    lg:w-[1024px]
+    min-[1024px]:min-w-[1024px]
+    bg-[#F1F5F9]
+    rounded-[30px]
+    md:rounded-[60px]
+    lg:rounded-[100px]
+    relative
+    overflow-hidden
+    py-8
+    lg:h-[590px]
+  "
+>          <div className="relative text-center mt-6">
             <img
               src={c4}
               alt="Decorative background"
@@ -102,7 +116,7 @@ export default function GPRecruitmentSolutions() {
                 alt="Title background"
                 className="absolute inset-0 h-full w-full object-cover opacity-10 pointer-events-none -z-10"
               />
-              <h2 className="relative text-4xl font-semibold text-[#0B5A39]">
+              <h2 className="relative text-4xl lg:mt-2 font-semibold text-[#0B5A39]">
                 Jobs N Visa GP Recruitment Solutions
               </h2>
 
@@ -155,7 +169,7 @@ export default function GPRecruitmentSolutions() {
 
                     {item.position === "bottom" && (
                       <div
-                        className={`absolute top-20 left-1/2 -translate-x-1/2 w-[250px] ${textAlignClass}`}
+                        className={`absolute top-20 left-1/2 -translate-x-1/2 lg:w-[160px] xl:w-[250px] ${textAlignClass}`}
                       >
                         <div className="relative flex flex-col items-center">
                           {/* Background Image */}
@@ -180,7 +194,7 @@ export default function GPRecruitmentSolutions() {
                     {/* Top */}
                     {item.position === "top" && (
                       <div
-                        className={`absolute bottom-24 left-1/2 -translate-x-1/2 w-[250px] ${textAlignClass}`}
+                        className={`absolute xl:bottom-24 lg:bottom-32 lg:left-1/2 xl:left-1/2 -translate-x-1/2 lg:w-[200px] xl:w-[250px] ${textAlignClass}`}
                       >
                         <div className="relative flex flex-col items-center">
                           {/* Background Image */}
@@ -243,47 +257,44 @@ export default function GPRecruitmentSolutions() {
           </div>
 
           {/* Mobile */}
-          <div className="lg:hidden space-y-8">
-            {steps.map((item, index) => {
-              const Icon = item.icon;
-              const isOddItem = index % 2 === 0;
+         
+          {/* ================= Mobile & Tablet ================= */}
+<div className="min-[1024px]:hidden px-4 sm:px-6 py-8">            <div className="space-y-5">
+              {steps.map((item, index) => {
+                const Icon = item.icon;
 
-              return (
-                <div
-                  key={index}
-                  className={
-                    isOddItem ? "flex flex-col items-center" : "flex gap-5"
-                  }
-                >
-                  {isOddItem && (
-                    <div className="w-12 h-12 rounded-xl bg-white shadow border flex items-center justify-center">
-                      <Icon size={20} className="text-[#0B7A45]" />
-                    </div>
-                  )}
-
+                return (
                   <div
-                    className={`pb-8 ${isOddItem ? "mt-4 text-center" : ""}`}
+                    key={index}
+                    className="bg-white rounded-2xl shadow-md border border-green-100 p-5 flex gap-4 hover:shadow-lg transition-all duration-300"
                   >
-                    {!isOddItem && (
-                      <div className="flex flex-col items-center mb-4">
-                        <div className="w-12 h-12 rounded-xl bg-white shadow border flex items-center justify-center">
-                          <Icon size={20} className="text-[#0B7A45]" />
-                        </div>
+                    <div className="flex-shrink-0">
+                      <div className="w-14 h-14 rounded-xl bg-[#F4FBF7] flex items-center justify-center">
+                        <Icon size={24} className="text-[#0B7A45]" />
                       </div>
-                    )}
-                    <h3 className="font-bold text-[#0B5A39] mb-2">
-                      {item.title}
-                    </h3>
+                    </div>
 
-                    <ul className="text-[16px] font-semibold text-gray-600 space-y-1">
-                      {item.points.map((point) => (
-                        <li key={point}>• {point}</li>
-                      ))}
-                    </ul>
+                    <div className="flex-1">
+                      <h3 className="font-bold text-lg text-[#0B5A39]">
+                        {item.title}
+                      </h3>
+
+                      <ul className="mt-3 space-y-2">
+                        {item.points.map((point) => (
+                          <li
+                            key={point}
+                            className="flex items-start gap-2 text-[15px] text-gray-600"
+                          >
+                            <span className="text-[#36A96B] mt-[2px]">•</span>
+                            <span>{point}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>

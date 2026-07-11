@@ -252,37 +252,39 @@ const Gprecuirter = () => {
             </div>
           </div>
               <GPRecruitmentSolutions/>
-            <div className="w-[1440px] h-[600px]">
-              <p className="w-[434px] h-[45px] mt-[50px] ml-[503px] font-bold text-[30px] text-green-900">Why to choose Jobs N Visa?</p>
-             <img
-                src={h6}
-                alt="GP recruitment overview"
-                className="w-full lg:w-[666px] h-[500px] rounded-[80px] mt-[38px]"
-              />
+            <div className="w-full max-w-[1440px] mx-auto px-5 lg:px-10 py-10 lg:py-0">
+              <p className="font-bold text-[24px] sm:text-[28px] lg:text-[30px] text-center lg:text-centee lg:mt-6 text-green-900 mb-6 lg:mb-0">Why to choose Jobs N Visa?</p>
+              <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+                <img
+                  src={h6}
+                  alt="GP recruitment overview"
+                  className="w-full sm:w-[90%] lg:w-[50%] lg:h-[550px] mt-5 h-auto rounded-[30px] sm:rounded-[50px] lg:rounded-[80px]"
+                />
 
-              <div className="w-full  flex flex-col gap-6 ml-[720px] mt-[-485px]">
-                <div className="w-[530px] h-[230px] rounded-[30px] bg-green-50 p-8 " style={{ boxShadow: '0px 4px 30px 0px #00582933' }}>
-                  <p className="text-slate-500 font-bold text-[22px] mb-4">
-                    Employee
-                  </p>
-                <ul className="w-full max-w-[447px] text-left font-semibold text-[18px] text-slate-700 space-y-2 mb-8">
-                    <li>• Multiple GP roles across Australia</li>
-                    <li>• Clear guidance on registration pathways</li>
-                    <li>• Support with relocation and interviews</li>
-                    <li>• Guidance on employer-sponsored visas</li>
-                  </ul>
-                </div>
+                <div className="w-full lg:w-[50%] xl:w-[480px] lg:mt-8 flex flex-col gap-6">
+                  <div className="w-full rounded-[20px] sm:rounded-[30px] bg-green-50 p-6 sm:p-8" style={{ boxShadow: '0px 4px 30px 0px #00582933' }}>
+                    <p className="text-slate-500 font-bold text-[18px] sm:text-[20px] lg:text-[22px] mb-4">
+                      Employee
+                    </p>
+                    <ul className="w-full text-left font-semibold text-[14px] sm:text-[15px] lg:text-[16px] text-slate-700 space-y-2 mb-8">
+                      <li>• Multiple GP roles across Australia</li>
+                      <li>• Clear guidance on registration pathways</li>
+                      <li>• Support with relocation and interviews</li>
+                      <li>• Guidance on employer-sponsored visas</li>
+                    </ul>
+                  </div>
 
-                <div className="w-[530px] h-[230px] rounded-[30px] bg-slate-100 p-8 ml-[140px]"style={{ boxShadow: '0px 4px 30px 0px #00582933' }}>
-                  <p className="text-green-700 font-bold text-[22px] mb-4">
-                    Employer
-                  </p>
-                <ul className="w-full max-w-[447px] text-left font-semibold text-[18px]  text-green-800 space-y-2 mb-8">
-                    <li>• Access to overseasQuickly reduce GP shortages</li>
-                    <li>• Access local and overseas talent</li>
-                    <li>• Ensure fully compliant recruitment process</li>
-                    <li>• Plan long-term workforce strategyt</li>
-                  </ul>
+                  <div className="w-full rounded-[20px] xl:ml-[130px] sm:rounded-[30px] bg-slate-100 p-6 sm:p-8" style={{ boxShadow: '0px 4px 30px 0px #00582933' }}>
+                    <p className="text-green-700 font-bold text-[18px] sm:text-[20px] lg:text-[22px] mb-4">
+                      Employer
+                    </p>
+                    <ul className="w-full text-left font-semibold text-[14px] sm:text-[15px] lg:text-[16px] text-green-800 space-y-2 mb-8">
+                      <li>• Access to overseas talent quickly reduce GP shortages</li>
+                      <li>• Access local and overseas talent</li>
+                      <li>• Ensure fully compliant recruitment process</li>
+                      <li>• Plan long-term workforce strategy</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
