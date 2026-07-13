@@ -96,6 +96,7 @@ export default function GPRecruitmentSolutions() {
     min-[1024px]:min-w-[1024px]
     bg-[#F1F5F9]
     rounded-[30px]
+    md:w-[768px]
     md:rounded-[60px]
     lg:rounded-[100px]
     relative
