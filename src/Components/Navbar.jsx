@@ -12,7 +12,7 @@ const Navbar = () => {
     { name: "Recruiters", href: "/recruiters" },
     { name: "Healthcare", href: "#healthcare" },
     { name: "Job Search", href: "#jobs" },
-    { name: "Blogs", href: "#blogs" },
+    { name: "Blogs", href: "/blogs" },
   ];
 
   const serviceItems = [

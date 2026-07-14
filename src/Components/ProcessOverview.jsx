@@ -1,19 +1,18 @@
 import Process from "../assets/Process.svg";
 const ProcessOverview = () => {
   return (
-    <section className="w-full py-8 md:py-12 px-4">
+    <section className="w-full py-6 md:py-10 px-4">
       <div className="max-w-7xl mx-auto">
-         <h2
-          className="text-center text-orange-300 font-bold text-[40px] lg:text-[40px] mt-2"        >
+         <h2 className="text-center text-orange-300 font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-2">
           Process Overview
         </h2>
 
         {/* Desktop View */}
-        <div className="flex justify-center w-full">
+        <div className="flex justify-center w-full mt-6">
           <img
             src={Process}
             alt="Process Overview"
-            className="w-[320px] sm:w-[500px] md:w-[700px] lg:w-[1000px] xl:w-[14400px] h-auto object-contain"
+            className="w-full max-w-[320px] sm:max-w-[500px] md:max-w-[800px] lg:max-w-[1000px] xl:max-w-[1400px] h-auto object-contain"
           />
         </div>
       </div>

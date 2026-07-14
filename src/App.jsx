@@ -6,6 +6,7 @@ import Footer from './Components/Footer'
 import Recruiter from './pages/Recruiter'
 import Employee from './pages/Employee'
 import Gprecuirter from './pages/Gprecuirter'
+import Blog from './pages/Blog'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/recruiters-services" element={<Recruiter />} />
         <Route path="/employee-services" element={<Employee/>} />
         <Route path="/recruiters" element={<Gprecuirter />} />
+        <Route path="/blogs" element={<Blog/>}/>
       </Routes>
       <Footer/>
     </Router>
