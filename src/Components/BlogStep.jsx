@@ -66,8 +66,8 @@ const BlogStep = () => {
             disabled={currentPage === 1}
             className={`px-5 py-2 rounded-lg transition ${
               currentPage === 1
-                ? "text-blue-400 cursor-pointer hover:text-green-500"
-                : "text-black text-[18px] hover:text-green-500 cursor-pointer"
+                ? "cursor-pointer text-green-500"
+                : "text-[18px] text-green-500 cursor-pointer"
             }`}
           >
             Prev
