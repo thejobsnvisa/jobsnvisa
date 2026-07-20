@@ -19,8 +19,8 @@ export const blogs = [
     metaDescription:
       "Master the regional visa pathway. Learn how the 15-point nomination bonus unlocks Australian PR, check your eligibility, and view the 2026 processing times.",
     date: "July 13, 2026",
-    imageBlock2: d1,
-    imageBlock4:d2
+    image: d1,
+    img:d2
   },
   {
     id: 2,

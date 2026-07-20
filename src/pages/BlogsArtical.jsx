@@ -164,10 +164,10 @@ const BlogsArticle = () => {
   // Helper to retrieve block 2 & block 4 images from article data safely
   const getBlockImage = (blockIndex) => {
     if (blockIndex === 1) {
-      return article?.imageBlock2 || article?.image || article?.img;
+      return article?.image;
     }
     if (blockIndex === 3) {
-      return article?.imageBlock4 || article?.image2 || article?.image || article?.img;
+      return article?.img;
     }
     return null;
   };
