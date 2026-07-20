@@ -24,7 +24,7 @@ export const blogs = [
   },
   {
     id: 2,
-    slug: "total-cost-for-australia-pr-in-2026-approximate-fees-and-expenses",
+    slug: "subclass-491-visa-guide-your-path-to-australia-pr",
     title: "Aged Care & Healthcare Workers ",
     description:
       "At JobsNVisa, we connect caregivers, nurses, and support workers with trusted employers across the country.",
@@ -37,7 +37,7 @@ export const blogs = [
   },
   {
     id: 3,
-    slug: "how-to-apply-for-subclass-189-visa-get-australia-pr",
+    slug: "subclass-491-visa-guide-your-path-to-australia-pr",
     title:
       "Subclass 186 vs 494 vs 482: Which Visa Is Best for Hiring Nurses in Australia?",
     description:
@@ -51,7 +51,7 @@ export const blogs = [
   },
   {
     id: 4,
-    slug: "australias-skilled-occupation-list-lost-its-purpose",
+    slug: "subclass-491-visa-guide-your-path-to-australia-pr",
     title: "Aged Care & Healthcare Workers",
     description:
       "At JobsNVisa, we connect caregivers, nurses, and support workers with trusted employers across the country.",
@@ -65,7 +65,7 @@ export const blogs = [
   },
   {
     id: 5,
-    slug: "fnq-dama-explained-your-practical-pathway-to-australian-pr",
+    slug: "subclass-491-visa-guide-your-path-to-australia-pr",
     title:
       "Subclass 186 vs 494 vs 482: Which Visa Is Best for Hiring Nurses in Australia?",
     description:
@@ -79,7 +79,7 @@ export const blogs = [
   },
   {
     id: 6,
-    slug: "how-to-apply-482-visa-process",
+    slug: "subclass-491-visa-guide-your-path-to-australia-pr",
     title: "482 Visa Apply: Employer Sponsored Visa Requirements and Process",
     description:
       "At JobsNVisa, we connect caregivers, nurses, and support workers with trusted employers across the country.",
@@ -92,7 +92,7 @@ export const blogs = [
   },
   {
     id: 7,
-    slug: "australia-pr-partner-points-explained-how-to-get-5-or-10-extra-points",
+    slug: "subclass-491-visa-guide-your-path-to-australia-pr",
     title: "Healthcare & Medical Professionals",
     description:
       "At JobsNVisa, we connect caregivers, nurses, and support workers with trusted employers across the country.",
@@ -105,7 +105,7 @@ export const blogs = [
   },
   {
     id: 8,
-    slug: "can-you-work-in-australia-without-sponsorship-a-real-option-explained",
+    slug: "subclass-491-visa-guide-your-path-to-australia-pr",
     title:
       "Can You Work in Australia Without Sponsorship? A Real Option Explained",
     description:
@@ -119,7 +119,7 @@ export const blogs = [
   },
   {
     id: 9,
-    slug: "what-is-the-western-australia-dama-and-how-does-it-work",
+    slug: "subclass-491-visa-guide-your-path-to-australia-pr",
     title: "What Is the Western Australia DAMA and How Does It Work?",
     description:
       "At JobsNVisa, we connect caregivers, nurses, and support workers with trusted employers across the country.",
