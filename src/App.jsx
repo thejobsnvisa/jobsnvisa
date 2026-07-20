@@ -7,7 +7,7 @@ import Recruiter from './pages/Recruiter'
 import Employee from './pages/Employee'
 import Gprecuirter from './pages/Gprecuirter'
 import Blog from './pages/Blog'
-
+import BlogsArtical from './pages/BlogsArtical'
 function App() {
   return (
     <Router>
@@ -18,6 +18,7 @@ function App() {
         <Route path="/employee-services" element={<Employee/>} />
         <Route path="/recruiters" element={<Gprecuirter />} />
         <Route path="/blogs" element={<Blog/>}/>
+        <Route path="/blogs/:slug/" element={<BlogsArtical />} />
       </Routes>
       <Footer/>
     </Router>
