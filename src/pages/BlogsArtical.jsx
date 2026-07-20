@@ -210,7 +210,7 @@ const BlogsArticle = () => {
 
       <div className="min-h-screen bg-white font-jakarta text-[#042325]">
         {/* HEADER */}
-        <div className="relative w-full max-w-[1300px] mt-24 md:mt-40 mx-auto overflow-hidden bg-green-200 rounded-[30px] md:rounded-[60px] px-4 sm:px-6 md:px-12 py-8 md:py-10">
+        <div className="relative w-full max-w-[1300px] mt-28 md:mt-30 lg:mt-32 md:mt-40 mx-auto overflow-hidden bg-green-200 rounded-[30px] md:rounded-[60px] px-4 sm:px-6 md:px-12 py-8 md:py-10">
           <img
             src={w1}
             alt="Background Decorative Vector"
@@ -251,7 +251,7 @@ const BlogsArticle = () => {
                 <div
                   key={`md-block-${idx}`}
                   className={`w-full max-w-[880px] rounded-[35px] text-center md:rounded-[50px] p-6 md:p-10 shadow-lg border border-gray-100 transition-all ${
-                    idx % 2 === 0 ? "bg-slate-50" : "bg-green-50/70"
+                    idx % 2 === 0 ? "bg-slate-50" : "bg-green-50"
                   }`}
                 >
                   <ReactMarkdown
